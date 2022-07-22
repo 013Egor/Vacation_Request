@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ApexClass" />
+        <option value="ApexClass.cls-meta" />
+        <option value="HTML File" />
+        <option value="LightningWebComponent" />
+        <option value="LightningWebComponent.js-meta" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CCRqjUzdFsJCssukH3agdBCgzX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UseStandardLocationKey": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
+      <created>1658304774967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658304774967</updated>
+      <workItem from="1658304777789" duration="1261000" />
+      <workItem from="1658385843812" duration="6353000" />
+      <workItem from="1658474067301" duration="12436000" />
+    </task>
+    <task id="LOCAL-00001" summary="Deploy with ApexVCS">
+      <created>1658305464148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658305464149</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deploy with ApexVCS">
+      <created>1658386454937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658386454937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Deploy with ApexVCS">
+      <created>1658395835747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658395835747</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Deploy with ApexVCS">
+      <created>1658397131816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1658397131816</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Deploy with ApexVCS">
+      <created>1658400990003</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658400990003</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Deploy with ApexVCS">
+      <created>1658474149649</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658474149649</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Deploy with ApexVCS">
+      <created>1658474878862</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658474878862</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Deploy with ApexVCS">
+      <created>1658475088635</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475088635</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Deploy with ApexVCS">
+      <created>1658475184891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475184891</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Deploy with ApexVCS">
+      <created>1658475312929</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475312929</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Deploy with ApexVCS">
+      <created>1658475458378</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475458378</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Deploy with ApexVCS">
+      <created>1658475537977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475537977</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Deploy with ApexVCS">
+      <created>1658475866989</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658475866989</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Deploy with ApexVCS">
+      <created>1658476056794</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1658476056794</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Deploy with ApexVCS">
+      <created>1658476343099</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658476343099</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Deploy with ApexVCS">
+      <created>1658476418094</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658476418094</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Deploy with ApexVCS">
+      <created>1658476502053</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658476502054</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Deploy with ApexVCS">
+      <created>1658478141707</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658478141707</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Deploy with ApexVCS">
+      <created>1658478827052</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658478827052</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Deploy with ApexVCS">
+      <created>1658479291785</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658479291785</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Deploy with ApexVCS">
+      <created>1658479367498</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658479367498</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Deploy with ApexVCS">
+      <created>1658482012062</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658482012063</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Deploy with ApexVCS">
+      <created>1658482191261</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1658482191261</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Deploy with ApexVCS">
+      <created>1658482904992</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1658482904992</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Deploy with ApexVCS">
+      <created>1658482957590</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1658482957590</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Deploy with ApexVCS">
+      <created>1658485850686</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1658485850686</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Deploy with ApexVCS">
+      <created>1658485916990</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1658485916990</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Deploy with ApexVCS">
+      <created>1658486134447</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1658486134447</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Deploy with ApexVCS">
+      <created>1658486199310</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1658486199310</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Deploy with ApexVCS">
+      <created>1658486419077</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1658486419077</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Deploy with ApexVCS">
+      <created>1658487020177</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1658487020177</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Deploy with ApexVCS">
+      <created>1658487185964</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1658487185964</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Deploy with ApexVCS">
+      <created>1658487343938</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1658487343938</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Deploy with ApexVCS">
+      <created>1658487441890</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1658487441891</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Deploy with ApexVCS">
+      <created>1658487888728</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1658487888728</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Deploy with ApexVCS">
+      <created>1658488392937</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1658488392938</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Deploy with ApexVCS">
+      <created>1658488596052</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1658488596052</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Deploy with ApexVCS">
+      <created>1658489105035</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1658489105035</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Deploy with ApexVCS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deploy with ApexVCS" />
+  </component>
+</project>
