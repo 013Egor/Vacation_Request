@@ -22,7 +22,7 @@ export default class VacationRequest extends LightningElement {
         this.modelWindow = true;
     }
     handleChange(event) {
-        this.text = event.target.value;
+        this.text = hasManager();
     }
 
 
