@@ -1,9 +1,12 @@
-import {LightningElement} from 'lwc';
+import {LightningElement, wire} from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { getSObjectValue } from '@salesforce/apex';
 
 import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestType__c';
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
+
+import NAME_FIELD from '@salesforce/schema/User.Name';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 
@@ -17,14 +20,15 @@ export default class VacationRequest extends LightningElement {
     variant = 'error';
     variants = 'success';
 
+    @wire(hasManager) contact;
+
     openRequestWindow() {
-        this.text = hasManager();
         this.modelWindow = true;
     }
-    handleChange(event) {
-        this.text = hasManager().value;
-    }
 
+    get text() {
+        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : '';
+    }
 
     closeRequestWindow() {
         this.modelWindow = false;
