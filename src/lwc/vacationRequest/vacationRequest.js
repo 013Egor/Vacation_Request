@@ -27,7 +27,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     get text() {
-        return 'nope';
+        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : 'nope';
     }
 
     closeRequestWindow() {
