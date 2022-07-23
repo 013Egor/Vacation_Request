@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.js-meta.xml" beforeDir="false" />
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="added trigger to VacationRequest__c to set manager">
+      <change beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,13 +17,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="ApexClass" />
-        <option value="ApexClass.cls-meta" />
         <option value="HTML File" />
         <option value="LightningWebComponent" />
         <option value="LightningWebComponent.js-meta" />
         <option value="ApexTrigger" />
         <option value="ApexTrigger.trigger-meta" />
+        <option value="ApexClass" />
+        <option value="ApexClass.cls-meta" />
       </list>
     </option>
   </component>
@@ -58,7 +61,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="9360000" />
+      <workItem from="1658559837683" duration="12062000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy with ApexVCS">
       <created>1658305464148</created>
@@ -382,7 +385,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658587520582</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="remove test class">
+      <created>1658587710997</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1658587710997</updated>
+    </task>
+    <task id="LOCAL-00048" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658587777287</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1658587777287</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +409,7 @@
     <MESSAGE value="Deploy with ApexVCS" />
     <MESSAGE value="added trigger to set manager to request" />
     <MESSAGE value="remove test class" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove test class" />
+    <MESSAGE value="added trigger to VacationRequest__c to set manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="added trigger to VacationRequest__c to set manager" />
   </component>
 </project>

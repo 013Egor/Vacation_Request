@@ -5,6 +5,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>requestTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
         <members>standard__AllTabSet</members>
         <members>standard__AppLauncher</members>
         <members>standard__Chatter</members>
@@ -207,6 +211,7 @@
         <members>TopicAssignment</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
+        <members>Vacation_Request__c</members>
         <members>VoiceCall</members>
         <members>WebStore</members>
         <members>WorkOrder</members>
@@ -223,6 +228,8 @@
     </types>
     <types>
         <members>Book__c</members>
+        <members>Vacation_Request</members>
+        <members>Vacation_Request__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -348,6 +355,7 @@
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>Vacation_Request__c-Vacation Request Layout</members>
         <members>WebStore-Store Layout</members>
         <members>WorkOrder-Work Order Layout</members>
         <members>WorkOrderLineItem-Work Order Line Item Layout</members>

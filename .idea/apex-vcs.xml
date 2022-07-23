@@ -6,12 +6,20 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
+      <option name="path" value="/src/classes/ManagerController.cls-meta.xml" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
       <option name="path" value="/src/triggers/request.trigger" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
       <option name="path" value="/src/triggers/request.trigger-meta.xml" />
       <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/ManagerController.cls" />
+      <option name="type" value="NEW" />
     </index-record>
     <index-record>
       <option name="path" value="/src/lwc/helloWorld/helloWorld.js" />
