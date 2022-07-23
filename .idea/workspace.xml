@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/classes/ManagerController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ManagerController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,28 +56,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="22028000" />
-    </task>
-    <task id="LOCAL-00045" summary="added trigger to set manager to request">
-      <created>1658587329149</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1658587329149</updated>
-    </task>
-    <task id="LOCAL-00046" summary="remove test class">
-      <created>1658587520582</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1658587520582</updated>
-    </task>
-    <task id="LOCAL-00047" summary="remove test class">
-      <created>1658587710997</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1658587710997</updated>
+      <workItem from="1658559837683" duration="22359000" />
     </task>
     <task id="LOCAL-00048" summary="added trigger to VacationRequest__c to set manager">
       <created>1658587777287</created>
@@ -402,17 +380,42 @@
       <option name="project" value="LOCAL" />
       <updated>1658601454903</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658601635223</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1658601635223</updated>
+    </task>
+    <task id="LOCAL-00095" summary="a">
+      <created>1658601718399</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1658601718400</updated>
+    </task>
+    <task id="LOCAL-00096" summary="a">
+      <created>1658601865698</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1658601865698</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deploy with ApexVCS" />
     <MESSAGE value="added trigger to set manager to request" />
     <MESSAGE value="remove test class" />
     <MESSAGE value="added trigger to VacationRequest__c to set manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="added trigger to VacationRequest__c to set manager" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
