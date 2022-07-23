@@ -1,9 +1,9 @@
 public with sharing class ManagerController {
 
 	@AuraEnabled(cacheable=true)
-	public static Boolean hasManager() {
+	public static String hasManager() {
 		User manager = [SELECT ManagerId FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
 
-		return manager.IsActive;
+		return manager.ManagerId.toString();
 	}
 }

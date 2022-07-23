@@ -14,7 +14,7 @@ export default class VacationRequest extends LightningElement {
     modelWindow = false;
 
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
-    text = 'dfd';
+
     _title = 'Sample Title';
     message = 'Sample Message';
     variant = 'error';
@@ -22,19 +22,23 @@ export default class VacationRequest extends LightningElement {
 
     @wire(hasManager) contact;
 
-    openRequestWindow() {
-        if (this.contact.data == true) {
-            const evt = new ShowToastEvent({
-                title: this._title,
-                message: this.message,
-                variant: this.variants,
-            });
-            this.dispatchEvent(evt);
-        } else {
-            this.modelWindow = true;
-        }
-
+    get text() {
+        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : '';
     }
+
+    // openRequestWindow() {
+    //     if (this.contact.data == true) {
+    //         const evt = new ShowToastEvent({
+    //             title: this._title,
+    //             message: this.message,
+    //             variant: this.variants,
+    //         });
+    //         this.dispatchEvent(evt);
+    //     } else {
+    //         this.modelWindow = true;
+    //     }
+    //
+    // }
 
     closeRequestWindow() {
         this.modelWindow = false;
