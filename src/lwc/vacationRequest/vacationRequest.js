@@ -25,10 +25,11 @@ export default class VacationRequest extends LightningElement {
     completeRecord() {
 
         const evt = new ShowToastEvent({
-            title: 'Успешно',
-            message: 'dfdfsdfdsfdsfds',
-            variant: 'success',
+            title: this._title,
+            message: this.message,
+            variant: this.variant,
         });
+        this.dispatchEvent(evt);
         // this.dispatchEvent(evt);
         // let isGood = setManager(event);
         // if (isGood == true) {
@@ -51,11 +52,6 @@ export default class VacationRequest extends LightningElement {
     }
 
     showNotification() {
-        const evt = new ShowToastEvent({
-            title: this._title,
-            message: this.message,
-            variant: this.variant,
-        });
-        this.dispatchEvent(evt);
+
     }
 }
