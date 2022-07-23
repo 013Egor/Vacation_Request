@@ -5,7 +5,7 @@ import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestT
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
-import setManager from '@salesforce/apex/ManagerController.setManager';
+import hasManager from '@salesforce/apex/ManagerController.hasManager';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
@@ -17,8 +17,16 @@ export default class VacationRequest extends LightningElement {
     variants = 'success';
 
     openRequestWindow() {
-
-        this.modelWindow = true;
+        if (hasManager()) {
+            this.modelWindow = true;
+        } else {
+            const evt = new ShowToastEvent({
+                title: this._title,
+                message: this.message,
+                variant: this.variant,
+            });
+            this.dispatchEvent(evt);
+        }
     }
 
     closeRequestWindow() {
@@ -33,13 +41,6 @@ export default class VacationRequest extends LightningElement {
                 title: this._title,
                 message: this.message,
                 variant: this.variants,
-            });
-            this.dispatchEvent(evt);
-        } else {
-            const evt = new ShowToastEvent({
-                title: this._title,
-                message: this.message,
-                variant: this.variant,
             });
             this.dispatchEvent(evt);
         }

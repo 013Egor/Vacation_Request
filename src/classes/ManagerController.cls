@@ -1,13 +1,12 @@
 public with sharing class ManagerController {
 
 	@AuraEnabled(cacheable=true)
-	public static boolean setManager(Vacation_Request__c request) {
+	public static boolean hasManager() {
 		User manager = [SELECT ManagerId FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
 		if (manager == null) {
 			return false;
+		} else {
+			return true;
 		}
-		request.Manager__c = manager.ManagerId;
-		request.WorkingDays__c = request.EndDate__c.day() - request.StartDate__c.day();
-		return true;
 	}
 }
