@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/miscNotification/miscNotification.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/miscNotification/miscNotification.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/miscNotification/miscNotification.js-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,21 +56,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="15308000" />
-    </task>
-    <task id="LOCAL-00015" summary="Deploy with ApexVCS">
-      <created>1658476343099</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1658476343099</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Deploy with ApexVCS">
-      <created>1658476418094</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1658476418094</updated>
+      <workItem from="1658559837683" duration="15896000" />
     </task>
     <task id="LOCAL-00017" summary="Deploy with ApexVCS">
       <created>1658476502053</created>
@@ -406,7 +387,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658593420232</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658593489566</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1658593489566</updated>
+    </task>
+    <task id="LOCAL-00065" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658593651522</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1658593651522</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
