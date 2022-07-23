@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="Deploy with ApexVCS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +56,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="5984000" />
+      <workItem from="1658559837683" duration="9048000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy with ApexVCS">
       <created>1658305464148</created>
@@ -357,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658575676099</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Deploy with ApexVCS">
+      <created>1658575785494</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1658575785494</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
