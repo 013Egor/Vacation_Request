@@ -18,10 +18,10 @@ export default class VacationRequest extends LightningElement {
         this.modelWindow = false;
     }
 
-    completeRecord(event) {
+    completeRecord() {
         const evt = new ShowToastEvent({
             title: 'Успешно',
-            message: event.toString(),
+            message: 'dfdfsdfdsfdsfds',
             variant: 'success',
         });
         // this.dispatchEvent(evt);
