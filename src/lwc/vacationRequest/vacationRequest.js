@@ -23,7 +23,7 @@ export default class VacationRequest extends LightningElement {
     @wire(hasManager) contact;
 
     openRequestWindow() {
-        if (hasManager().data == true) {
+        if (hasManager().data.value() == true) {
             const evt = new ShowToastEvent({
                 title: this._title,
                 message: this.message,
