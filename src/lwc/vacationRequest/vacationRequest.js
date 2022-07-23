@@ -26,19 +26,9 @@ export default class VacationRequest extends LightningElement {
         return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : 'nope';
     }
 
-    // openRequestWindow() {
-    //     if (this.contact.data == true) {
-    //         const evt = new ShowToastEvent({
-    //             title: this._title,
-    //             message: this.message,
-    //             variant: this.variants,
-    //         });
-    //         this.dispatchEvent(evt);
-    //     } else {
-    //         this.modelWindow = true;
-    //     }
-    //
-    // }
+    openRequestWindow() {
+        this.modelWindow = true;
+    }
 
     closeRequestWindow() {
         this.modelWindow = false;

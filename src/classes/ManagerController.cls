@@ -1,9 +1,9 @@
 public with sharing class ManagerController {
 
 	@AuraEnabled(cacheable=true)
-	public static SObjectType hasManager() {
+	public static User hasManager() {
 		User me = [SELECT Name, ManagerId FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
-		return  me.ManagerId.getSobjectType();
-
+		User manager = [SELECT Name FROM User WHERE Id =: me.ManagerId LIMIT 1];
+		return manager;
 	}
 }

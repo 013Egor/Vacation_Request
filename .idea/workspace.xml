@@ -4,6 +4,8 @@
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/ManagerController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ManagerController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +59,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="23619000" />
-    </task>
-    <task id="LOCAL-00051" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658590859930</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1658590859930</updated>
-    </task>
-    <task id="LOCAL-00052" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658591673103</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1658591673103</updated>
+      <workItem from="1658559837683" duration="24395000" />
     </task>
     <task id="LOCAL-00053" summary="added trigger to VacationRequest__c to set manager">
       <created>1658591872915</created>
@@ -402,7 +390,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658602180529</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="a">
+      <created>1658604029566</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1658604029566</updated>
+    </task>
+    <task id="LOCAL-00101" summary="a">
+      <created>1658604247203</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1658604247203</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
