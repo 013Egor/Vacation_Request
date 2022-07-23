@@ -6,7 +6,7 @@ public with sharing class ManagerController {
 		if (manager == null) {
 			return 'Nope';
 		} else {
-			return manager.toString();
+			return manager.Name;
 		}
 	}
 }
