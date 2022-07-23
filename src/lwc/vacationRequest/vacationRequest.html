@@ -5,6 +5,8 @@
                 <lightning-button label="New request" onclick={openRequestWindow}></lightning-button>
             </p>
         </div>
+        <p class="slds-m-vertical_small"><lightning-button label="Show Notification" onclick={completeRecord}></lightning-button></p>
+        </div>
     </lightning-card>
     <template if:true={modelWindow}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
