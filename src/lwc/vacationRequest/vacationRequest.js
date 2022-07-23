@@ -5,6 +5,8 @@ import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestT
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
+import setManager from '@salesforce/apex/ManagerController.setManager';
+
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
@@ -25,8 +27,7 @@ export default class VacationRequest extends LightningElement {
 
     completeRecord(event) {
 
-        //let isGood = setManager(event);
-        let isGood = true;
+        let isGood = setManager(event);
         if (isGood == true) {
             const evt = new ShowToastEvent({
                 title: this._title,
