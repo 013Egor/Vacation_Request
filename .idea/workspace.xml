@@ -57,21 +57,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="13475000" />
-    </task>
-    <task id="LOCAL-00003" summary="Deploy with ApexVCS">
-      <created>1658395835747</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1658395835747</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Deploy with ApexVCS">
-      <created>1658397131816</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1658397131816</updated>
+      <workItem from="1658559837683" duration="14143000" />
     </task>
     <task id="LOCAL-00005" summary="Deploy with ApexVCS">
       <created>1658400990003</created>
@@ -402,7 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658590859930</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658591673103</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1658591673103</updated>
+    </task>
+    <task id="LOCAL-00053" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658591872915</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1658591872915</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

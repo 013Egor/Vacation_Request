@@ -21,7 +21,7 @@ export default class VacationRequest extends LightningElement {
     completeRecord(event) {
         const evt = new ShowToastEvent({
             title: 'Успешно',
-            message: 'success',
+            message: event.toString(),
             variant: 'success',
         });
         // this.dispatchEvent(evt);
