@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ManagerController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ManagerController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,28 +56,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="20296000" />
-    </task>
-    <task id="LOCAL-00032" summary="Deploy with ApexVCS">
-      <created>1658487185964</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1658487185964</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Deploy with ApexVCS">
-      <created>1658487343938</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1658487343938</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Deploy with ApexVCS">
-      <created>1658487441890</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1658487441891</updated>
+      <workItem from="1658559837683" duration="20647000" />
     </task>
     <task id="LOCAL-00035" summary="Deploy with ApexVCS">
       <created>1658487888728</created>
@@ -403,7 +380,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658599480297</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658599890689</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1658599890689</updated>
+    </task>
+    <task id="LOCAL-00082" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658599926731</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1658599926731</updated>
+    </task>
+    <task id="LOCAL-00083" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658600014242</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1658600014242</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
