@@ -5,7 +5,4 @@ trigger requestTrigger on Vacation_Request__c (before insert) {
 	for (Vacation_Request__c request : Trigger.new) {
 		request.Manager__c = manager.ManagerId;
 	}
-//	for (Vacation_Request__c request : Trigger.new) {
-//		request.Name = 'tests';
-//	}
 }
