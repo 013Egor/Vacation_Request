@@ -23,7 +23,7 @@ export default class VacationRequest extends LightningElement {
     @wire(hasManager) contact;
 
     get text() {
-        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : '';
+        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : 'nope';
     }
 
     // openRequestWindow() {
