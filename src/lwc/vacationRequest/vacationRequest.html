@@ -5,8 +5,8 @@
                 <lightning-button label="New request" onclick={openRequestWindow}></lightning-button>
             </p>
         </div>
-        <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={handleChange}></lightning-input>
+        <p>Hello, {text}!</p>
+        <lightning-input label="Name" value={text} onchange={handleChange}></lightning-input>
         </div>
     </lightning-card>
     <template if:true={modelWindow}>
