@@ -21,6 +21,10 @@ export default class VacationRequest extends LightningElement {
         this.text = hasManager();
         this.modelWindow = true;
     }
+    handleChange(event) {
+        this.text = event.target.value;
+    }
+
 
     closeRequestWindow() {
         this.modelWindow = false;
