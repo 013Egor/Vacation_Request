@@ -6,12 +6,20 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
+      <option name="path" value="/src/lwc/MiscNotification/MiscNotification.js-meta.xml" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
       <option name="path" value="/src/classes/ManagerController.cls-meta.xml" />
       <option name="type" value="NEW" />
     </index-record>
     <index-record>
       <option name="path" value="/src/triggers/request.trigger" />
       <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/lwc/MiscNotification/MiscNotification.html" />
+      <option name="type" value="NEW" />
     </index-record>
     <index-record>
       <option name="path" value="/src/triggers/request.trigger-meta.xml" />
@@ -28,6 +36,10 @@
     <index-record>
       <option name="path" value="/src/lwc/helloWorld/helloWorld.html" />
       <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/lwc/MiscNotification/MiscNotification.js" />
+      <option name="type" value="NEW" />
     </index-record>
   </component>
 </project>

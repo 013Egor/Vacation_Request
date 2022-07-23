@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
-    </list>
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +11,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="LightningWebComponent" />
-        <option value="LightningWebComponent.js-meta" />
         <option value="ApexTrigger" />
         <option value="ApexTrigger.trigger-meta" />
         <option value="ApexClass" />
         <option value="ApexClass.cls-meta" />
+        <option value="LightningWebComponent" />
+        <option value="LightningWebComponent.js-meta" />
       </list>
     </option>
   </component>
@@ -57,28 +54,7 @@
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
-      <workItem from="1658559837683" duration="14528000" />
-    </task>
-    <task id="LOCAL-00008" summary="Deploy with ApexVCS">
-      <created>1658475088635</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1658475088635</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Deploy with ApexVCS">
-      <created>1658475184891</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1658475184891</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Deploy with ApexVCS">
-      <created>1658475312929</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1658475312929</updated>
+      <workItem from="1658559837683" duration="14871000" />
     </task>
     <task id="LOCAL-00011" summary="Deploy with ApexVCS">
       <created>1658475458378</created>
@@ -402,7 +378,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658592620314</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658592727735</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1658592727735</updated>
+    </task>
+    <task id="LOCAL-00058" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658592794907</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1658592794907</updated>
+    </task>
+    <task id="LOCAL-00059" summary="added trigger to VacationRequest__c to set manager">
+      <created>1658592925281</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1658592925286</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
