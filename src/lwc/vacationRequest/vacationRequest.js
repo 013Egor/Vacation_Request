@@ -6,13 +6,13 @@ import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestT
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
-import NAME_FIELD from '@salesforce/schema/User.ManagerId';
+import NAME_FIELD from '@salesforce/schema/User.Name';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
-    text = '';
+
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
     _title = 'Sample Title';
@@ -27,7 +27,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     get text() {
-        return this.contact.data ? getSObjectValue(this.contact.data, NAME_FIELD) : '';
+        return 'nope';
     }
 
     closeRequestWindow() {
