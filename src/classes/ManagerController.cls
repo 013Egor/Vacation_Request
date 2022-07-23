@@ -2,8 +2,8 @@ public with sharing class ManagerController {
 
 	@AuraEnabled(cacheable=false)
 	public static User hasManager() {
-		User me = [SELECT Name, ManagerId, Alias FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
+		User me = [SELECT Name, ManagerId, Manager FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
 
-		return me;
+		return me.Manager;
 	}
 }
