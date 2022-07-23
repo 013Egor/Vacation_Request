@@ -4,6 +4,6 @@ public with sharing class ManagerController {
 	public static String hasManager() {
 		User manager = [SELECT ManagerId FROM User WHERE Id =: UserInfo.getUserId() LIMIT 1];
 
-		return UserInfo.getName();
+		return 'hello';
 	}
 }
