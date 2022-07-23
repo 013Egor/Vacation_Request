@@ -19,13 +19,9 @@
                             object-api-name="Vacation_Request__c"
                             fields={fields}
                             oncancel={closeRequestWindow}
-                            onsubmit={closeRequestWindow}
+                            onsubmit={completeRecord}
                     >
                     </lightning-record-form>
-                </div>
-                <div class="slds-modal__footer">
-                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close">Cancel</button>
-                    <button class="slds-button slds-button_brand" onclick={completeRecord}>Save</button>
                 </div>
             </div>
 

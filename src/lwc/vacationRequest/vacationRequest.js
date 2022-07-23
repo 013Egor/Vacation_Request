@@ -12,6 +12,7 @@ export default class VacationRequest extends LightningElement {
     _title = 'Sample Title';
     message = 'Sample Message';
     variant = 'error';
+    variants = 'success';
 
     openRequestWindow() {
 
@@ -22,36 +23,25 @@ export default class VacationRequest extends LightningElement {
         this.modelWindow = false;
     }
 
-    completeRecord() {
+    completeRecord(event) {
 
-        const evt = new ShowToastEvent({
-            title: this._title,
-            message: this.message,
-            variant: this.variant,
-        });
-        this.dispatchEvent(evt);
-        // this.dispatchEvent(evt);
-        // let isGood = setManager(event);
-        // if (isGood == true) {
-        //     const evt = new ShowToastEvent({
-        //         title: 'Успешно',
-        //         message: 'success',
-        //         variant: 'success',
-        //     });
-        //     this.dispatchEvent(evt);
-        // } else {
-        //     const evt = new ShowToastEvent({
-        //         title: 'Ошибка',
-        //         message: 'error',
-        //         variant: 'error',
-        //     });
-        //     this.dispatchEvent(evt);
-        // }
-        // this.modelWindow = false;
-
-    }
-
-    showNotification() {
-
+        //let isGood = setManager(event);
+        let isGood = true;
+        if (isGood == true) {
+            const evt = new ShowToastEvent({
+                title: this._title,
+                message: this.message,
+                variant: this.variants,
+            });
+            this.dispatchEvent(evt);
+        } else {
+            const evt = new ShowToastEvent({
+                title: this._title,
+                message: this.message,
+                variant: this.variant,
+            });
+            this.dispatchEvent(evt);
+        }
+        this.modelWindow = false;
     }
 }
