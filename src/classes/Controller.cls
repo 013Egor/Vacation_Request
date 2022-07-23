@@ -6,4 +6,8 @@ public with sharing class Controller {
 				FROM Book__c
 		];
 	}
+
+	public static String getId() {
+		return UserInfo.getName();
+	}
 }

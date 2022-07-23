@@ -16,4 +16,8 @@ export default class VacationRequest extends LightningElement {
     closeRequestWindow() {
         this.modelWindow = false;
     }
+
+    completeRecord() {
+
+    }
 }

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Controller.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Controller.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,8 @@
         <option value="HTML File" />
         <option value="LightningWebComponent" />
         <option value="LightningWebComponent.js-meta" />
+        <option value="ApexTrigger" />
+        <option value="ApexTrigger.trigger-meta" />
       </list>
     </option>
   </component>
@@ -25,20 +32,22 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CCRqjUzdFsJCssukH3agdBCgzX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UseStandardLocationKey": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UseStandardLocationKey&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,7 +58,8 @@
       <updated>1658304774967</updated>
       <workItem from="1658304777789" duration="1261000" />
       <workItem from="1658385843812" duration="6353000" />
-      <workItem from="1658474067301" duration="12436000" />
+      <workItem from="1658474067301" duration="15130000" />
+      <workItem from="1658559837683" duration="3609000" />
     </task>
     <task id="LOCAL-00001" summary="Deploy with ApexVCS">
       <created>1658305464148</created>
