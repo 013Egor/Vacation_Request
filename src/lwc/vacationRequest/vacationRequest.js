@@ -5,9 +5,7 @@ import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestT
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
-import setManager from 'classes/ManagerController.setManager';
-
-
+import setManager from '@salesforce/apex/ManagerController.setManager';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
