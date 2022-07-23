@@ -9,6 +9,10 @@ export default class VacationRequest extends LightningElement {
     modelWindow = false;
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
+    _title = 'Sample Title';
+    message = 'Sample Message';
+    variant = 'error';
+
     openRequestWindow() {
 
         this.modelWindow = true;
@@ -44,5 +48,14 @@ export default class VacationRequest extends LightningElement {
         // }
         // this.modelWindow = false;
 
+    }
+
+    showNotification() {
+        const evt = new ShowToastEvent({
+            title: this._title,
+            message: this.message,
+            variant: this.variant,
+        });
+        this.dispatchEvent(evt);
     }
 }
