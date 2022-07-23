@@ -9,6 +9,7 @@ import hasManager from '@salesforce/apex/ManagerController.hasManager';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
+    text = '';
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
     _title = 'Sample Title';
@@ -17,16 +18,8 @@ export default class VacationRequest extends LightningElement {
     variants = 'success';
 
     openRequestWindow() {
-        if (hasManager()) {
-            this.modelWindow = true;
-        } else {
-            const evt = new ShowToastEvent({
-                title: this._title,
-                message: this.message,
-                variant: this.variant,
-            });
-            this.dispatchEvent(evt);
-        }
+        this.text = hasManager();
+        this.modelWindow = true;
     }
 
     closeRequestWindow() {
