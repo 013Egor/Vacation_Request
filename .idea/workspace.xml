@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,20 +59,6 @@
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
       <workItem from="1658559837683" duration="26604000" />
-    </task>
-    <task id="LOCAL-00064" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658593489566</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1658593489566</updated>
-    </task>
-    <task id="LOCAL-00065" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658593651522</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1658593651522</updated>
     </task>
     <task id="LOCAL-00066" summary="added trigger to VacationRequest__c to set manager">
       <created>1658594077085</created>
@@ -400,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658606597035</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="added check for manager">
+      <created>1658608896699</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1658608896699</updated>
+    </task>
+    <task id="LOCAL-00114" summary="added check for manager">
+      <created>1658608919483</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1658608919483</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,6 +418,7 @@
     <MESSAGE value="remove test class" />
     <MESSAGE value="added trigger to VacationRequest__c to set manager" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="added check for manager" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check for manager" />
   </component>
 </project>
