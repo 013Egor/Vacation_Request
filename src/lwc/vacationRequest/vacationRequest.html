@@ -16,8 +16,10 @@
                     <lightning-record-form
                             object-api-name="Vacation_Request__c"
                             fields={fields}
+                            onsuccess={handleSuccess}
                             oncancel={closeRequestWindow}
                             onsubmit={closeRequestWindow}
+                            onerror={showErrorMessage}
                     >
                     </lightning-record-form>
                 </div>

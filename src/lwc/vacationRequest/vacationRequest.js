@@ -30,4 +30,22 @@ export default class VacationRequest extends LightningElement {
     closeRequestWindow() {
         this.modelWindow = false;
     }
+
+    showErrorMessage(event) {
+        const evt = new ShowToastEvent({
+            title: 'Error',
+            message: event.detail.message,
+            variant: 'error'
+        });
+        this.dispatchEvent(evt);
+    }
+
+    handleSuccess(event) {
+        const evt = new ShowToastEvent({
+            title: 'Success',
+            message: 'Request is sent',
+            variant: 'Success'
+        });
+        this.dispatchEvent(evt);
+    }
 }
