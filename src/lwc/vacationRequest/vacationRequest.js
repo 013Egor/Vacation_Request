@@ -23,6 +23,7 @@ export default class VacationRequest extends LightningElement {
     handleLoad() {
         getRequests().then(result => {
             this.requests = result;
+            this.requests.add('Name', 'Egor');
         }).catch(error => {
             this.error = error;
         });
