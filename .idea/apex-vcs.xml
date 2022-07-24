@@ -2,27 +2,11 @@
 <project version="4">
   <component name="ApexVcsIndex">
     <index-record>
-      <option name="path" value="/src/triggers/request.trigger-meta.xml" />
-      <option name="type" value="DELETED" />
-    </index-record>
-    <index-record>
-      <option name="path" value="/src/lwc/helloWorld/helloWorld.html" />
-      <option name="type" value="DELETED" />
-    </index-record>
-    <index-record>
-      <option name="path" value="/src/lwc/helloWorld/helloWorld.js-meta.xml" />
-      <option name="type" value="DELETED" />
-    </index-record>
-    <index-record>
-      <option name="path" value="/src/classes/Controller.cls-meta.xml" />
-      <option name="type" value="DELETED" />
-    </index-record>
-    <index-record>
-      <option name="path" value="/src/classes/DateControllerTest.cls-meta.xml" />
+      <option name="path" value="/src/classes/RequestsController.cls-meta.xml" />
       <option name="type" value="NEW" />
     </index-record>
     <index-record>
-      <option name="path" value="/src/classes/DateControllerTest.cls" />
+      <option name="path" value="/src/classes/DateControllerTest.cls-meta.xml" />
       <option name="type" value="NEW" />
     </index-record>
     <index-record>
@@ -38,11 +22,19 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
-      <option name="path" value="/src/classes/DateController.cls" />
-      <option name="type" value="NEW" />
+      <option name="path" value="/src/triggers/request.trigger-meta.xml" />
+      <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/lwc/helloWorld/helloWorld.js-meta.xml" />
+      <option name="type" value="DELETED" />
     </index-record>
     <index-record>
       <option name="path" value="/src/lwc/helloWorld/helloWorld.js" />
+      <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/Controller.cls-meta.xml" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
@@ -50,7 +42,23 @@
       <option name="type" value="NEW" />
     </index-record>
     <index-record>
+      <option name="path" value="/src/classes/DateController.cls" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/DateControllerTest.cls" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/RequestsController.cls" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
       <option name="path" value="/src/triggers/request.trigger" />
+      <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/lwc/helloWorld/helloWorld.html" />
       <option name="type" value="DELETED" />
     </index-record>
   </component>

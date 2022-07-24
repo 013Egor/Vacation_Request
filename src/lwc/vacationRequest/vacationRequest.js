@@ -6,6 +6,7 @@ import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
+import getRequests from '@salesforce/apex/RequestsController.getRequests';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
@@ -13,6 +14,10 @@ export default class VacationRequest extends LightningElement {
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
     @wire(hasManager) contact;
+    @wire(getRequests) allRequests;
+    get requests() {
+        return this.allRequests;
+    }
 
     openRequestWindow() {
         if (this.contact.data) {

@@ -5,6 +5,13 @@
                 <lightning-button label="New request" onclick={openRequestWindow}></lightning-button>
             </p>
         </div>
+        <div class="slds-m-around_medium">
+            <template if:true={requests}>
+                <template for:each={requests} for:item="request">
+                    <p key={request.Id}>{request.OwnerIr}, {request.RequestType__c}, {request.StartDate__c}, {request.EndDate__c}, ({request.WorkingDays__c} days), {request.Manager__c}</p>
+                </template>
+            </template>
+        </div>
     </lightning-card>
     <template if:true={modelWindow}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
