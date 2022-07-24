@@ -19,17 +19,17 @@ export default class VacationRequest extends LightningElement {
     @track error;
 
     handleLoad2() {
-        const evt = new ShowToastEvent({
-            title: 'Error',
-            message: 'dfdf',
-            variant: 'error'
-        });
-        this.dispatchEvent(evt);
-        // getRequests().then(result => {
-        //     this.requests = result;
-        // }).catch(error => {
-        //     this.error = error;
+        // const evt = new ShowToastEvent({
+        //     title: 'Error',
+        //     message: 'dfdf',
+        //     variant: 'error'
         // });
+        // this.dispatchEvent(evt);
+        getRequests().then(result => {
+            this.requests = result;
+        }).catch(error => {
+            this.error = error;
+        });
     }
 
     openRequestWindow() {
