@@ -27,7 +27,7 @@ export default class VacationRequest extends LightningElement {
 
         getRequests().then(result => {
             this.requests = result;
-            console.log(result);
+            this.requests.forEach(x => x.add({UserName: 'Egor'}))
 
         }).catch(error => {
             this.error = error;
