@@ -22,14 +22,16 @@ public with sharing class RequestsController {
 		User[] allUsers = [SELECT Id, Name from User];
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
+			String userName = [SELECT Id, Name from User WHERE Id =: v.CreatedById].Name;
+			temp.name = userName;
 			temp.id = v.Id;
 			for (User person : allUsers) {
 				if (v.Manager__c == person.Id) {
 					temp.managerName = person.Name;
 				}
-				if (v.CreatedById == person.Id) {
-					temp.name = person.Name;
-				}
+//				if (v.CreatedById == person.Id) {
+//					temp.name = person.Name;
+//				}
 			}
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
