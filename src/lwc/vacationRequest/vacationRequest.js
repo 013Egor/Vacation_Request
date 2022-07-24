@@ -1,4 +1,4 @@
-import {LightningElement, wire} from 'lwc';
+import {LightningElement, wire, track} from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestType__c';
@@ -14,9 +14,11 @@ export default class VacationRequest extends LightningElement {
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
     @wire(hasManager) contact;
-    @wire(getRequests) allRequests;
-    get requests() {
-        return this.allRequests;
+    @track request;
+    handleLoad() {
+        getRequests().then(result => {
+            this.request = result;
+        });
     }
 
     openRequestWindow() {

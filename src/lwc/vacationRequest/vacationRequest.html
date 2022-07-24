@@ -6,6 +6,9 @@
             </p>
         </div>
         <div class="slds-m-around_medium">
+            <p class="slds-m-bottom_small">
+                <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+            </p>
             <template if:true={requests}>
                 <template for:each={requests} for:item="request">
                     <p key={request.Id}>{request.OwnerIr}, {request.RequestType__c}, {request.StartDate__c}, {request.EndDate__c}, ({request.WorkingDays__c} days), {request.Manager__c}</p>
