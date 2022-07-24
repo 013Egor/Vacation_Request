@@ -7,4 +7,8 @@ public with sharing class ManagerController {
 
 		return manager.size() != 0;
 	}
+
+	public static String getUserId() {
+		return UserInfo.getUserId();
+	}
 }

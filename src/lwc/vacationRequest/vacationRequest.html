@@ -4,9 +4,15 @@
                 <p class="slds-m-bottom_small">
                     <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
                 </p>
+                <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
-                        <p key={request.Id}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
+                        <div if:true={myList}>
+                            <p key={request.Id} if:true={id==request.userId}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
+                        </div>
+                        <div if:false={myList}>
+                            <p key={request.Id}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
+                        </div>
                     </template>
                 </template>
                 <template if:true={error}>

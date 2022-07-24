@@ -13,6 +13,8 @@ public with sharing class RequestsController {
 		public Decimal workingDays {get; set;}
 		@AuraEnabled
 		public String managerName {get; set;}
+		@AuraEnabled
+		public String userId {get; set;}
 	}
 
 	@AuraEnabled(cacheable=true)
@@ -28,6 +30,7 @@ public with sharing class RequestsController {
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
+			temp.userId = v.Id;
 
 			requestList.add(temp);
 		}
