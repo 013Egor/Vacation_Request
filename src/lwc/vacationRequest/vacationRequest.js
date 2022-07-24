@@ -19,7 +19,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
     f = [{
-        id: "23"
+        Type: "23"
     }]
 
     users;
@@ -30,6 +30,7 @@ export default class VacationRequest extends LightningElement {
                 console.log(x);
             });
             this.requests = result;
+            this.requests.concat(this.f);
         }).catch(error => {
             this.error = error;
         });
