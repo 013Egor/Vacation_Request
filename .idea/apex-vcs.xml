@@ -18,11 +18,19 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
+      <option name="path" value="/src/classes/DateControllerTest.cls-meta.xml" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
       <option name="path" value="/src/lwc/helloWorld/helloWorld.js" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
       <option name="path" value="/src/classes/DateController.cls-meta.xml" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/DateControllerTest.cls" />
       <option name="type" value="NEW" />
     </index-record>
     <index-record>
