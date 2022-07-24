@@ -27,7 +27,7 @@ public with sharing class RequestsController {
 			System.debug(temp);
 			requestList.add(temp);
 		}
-
+		System.debug(requestList);
 		return requestList;
 	}
 
