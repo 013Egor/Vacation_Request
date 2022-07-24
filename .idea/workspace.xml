@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Controller.cls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/Controller.cls-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,14 +73,7 @@
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
       <workItem from="1658559837683" duration="26604000" />
-      <workItem from="1658643074379" duration="4226000" />
-    </task>
-    <task id="LOCAL-00072" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658596559474</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1658596559474</updated>
+      <workItem from="1658643074379" duration="4603000" />
     </task>
     <task id="LOCAL-00073" summary="added trigger to VacationRequest__c to set manager">
       <created>1658596610893</created>
@@ -421,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658647027384</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="fixed requestTrigger.trigger">
+      <created>1658647578624</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1658647578624</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +450,8 @@
     <MESSAGE value="added DateController to get working days" />
     <MESSAGE value="added test to DateController.getWorkingDays()" />
     <MESSAGE value="fixed DateController.cls and add tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed DateController.cls and add tests" />
+    <MESSAGE value="fixed requestTrigger.trigger" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed requestTrigger.trigger" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
