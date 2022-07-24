@@ -1,0 +1,8 @@
+public with sharing class RequestsController {
+
+	@AuraEnabled(cacheable=true)
+	public static List<Vacation_Request__c> getRequests() {
+		return [SELECT OwnerId, RequestType__c, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c];
+	}
+
+}
