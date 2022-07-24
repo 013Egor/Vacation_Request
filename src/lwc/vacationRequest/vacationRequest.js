@@ -6,7 +6,6 @@ import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
-import getUserId from '@salesforce/apex/ManagerController.getUserId';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
 
 export default class VacationRequest extends LightningElement {
@@ -18,7 +17,6 @@ export default class VacationRequest extends LightningElement {
 
     @track requests;
     @track error;
-    @track id;
     myList = false;
     handleChange(event) {
         this.myList = event.target.checked;
@@ -31,7 +29,6 @@ export default class VacationRequest extends LightningElement {
         }).catch(error => {
             this.error = error;
         });
-        this.id = getUserId();
     }
 
     openRequestWindow() {
