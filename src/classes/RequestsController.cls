@@ -21,7 +21,7 @@ public with sharing class RequestsController {
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 
 		for (Vacation_Request__c v : l) {
-			String userName = [SELECT Name from User where Id =: v.CreatedById limit 1][0].Name;
+			String userName = [SELECT Id, Name from User where Id =: v.CreatedById limit 1][0].Name;
 //			String managerName = [SELECT Name from User where Id =: v.Manager__c limit 1][0].Name;
 			RequestWrapper temp = new RequestWrapper();
 			temp.id = v.Id;
