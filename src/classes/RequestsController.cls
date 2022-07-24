@@ -27,7 +27,7 @@ public with sharing class RequestsController {
 				if (v.Manager__c == person.Id) {
 					temp.managerName = person.Name;
 				}
-				if (v.Id == person.Id) {
+				if (v.CreatedById == person.Id) {
 					temp.name = person.Name;
 				}
 			}
