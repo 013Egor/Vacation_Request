@@ -34,7 +34,7 @@ export default class VacationRequest extends LightningElement {
     showErrorMessage(event) {
         const evt = new ShowToastEvent({
             title: 'Error',
-            message: event.detail.message,
+            message: event.detail.errorText,
             variant: 'error'
         });
         this.dispatchEvent(evt);
