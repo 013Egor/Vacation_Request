@@ -18,12 +18,16 @@ export default class VacationRequest extends LightningElement {
 
     @track requests;
     @track error;
+    f = [{
+        id: "23"
+    }]
 
     users;
     handleLoad() {
+
         getRequests().then(result => {
             this.requests = result;
-            this.requests.add({UserName : getUserName(result.detail.Id)}, {ManagerName: getUserName.detail.ManagerId})
+            console.log(result);
 
         }).catch(error => {
             this.error = error;
