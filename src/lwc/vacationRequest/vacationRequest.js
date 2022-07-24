@@ -14,10 +14,15 @@ export default class VacationRequest extends LightningElement {
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
 
     @wire(hasManager) contact;
+
     @track request;
+    @track error;
+
     handleLoad() {
         getRequests().then(result => {
             this.request = result;
+        }).catch(error => {
+            this.error = error;
         });
     }
 
