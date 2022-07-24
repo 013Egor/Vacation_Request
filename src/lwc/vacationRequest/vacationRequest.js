@@ -20,8 +20,8 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
     myList = false;
-    handleChange(event) {
-        this.myList = event.target.checked;
+
+    updateList() {
         if (this.myList == true) {
             getMyRequests().then(result => {
                 this.requests = result;
@@ -39,6 +39,11 @@ export default class VacationRequest extends LightningElement {
         }
     }
 
+    handleChange(event) {
+        this.myList = event.target.checked;
+        this.updateList();
+    }
+
     connectedCallback() {
         getRequests().then(result => {
             this.requests = result;
@@ -50,6 +55,13 @@ export default class VacationRequest extends LightningElement {
 
     removeRequest(event) {
         remove(event.target.value);
+        this.updateList();
+        const evt = new ShowToastEvent({
+            title: 'Error',
+            message: 'Добавьте менеджера',
+            variant: 'error'
+        });
+        this.dispatchEvent(evt);
     }
     openRequestWindow() {
         if (this.contact.data) {
