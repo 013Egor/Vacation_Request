@@ -22,7 +22,6 @@ export default class VacationRequest extends LightningElement {
         'Type': '223'
     }]
 
-    users;
     handleLoad() {
 
         getRequests().then(result => {

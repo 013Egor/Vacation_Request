@@ -1,6 +1,6 @@
 public with sharing class RequestsController {
 
-	public class RequestWrapper {
+	public with sharing class RequestWrapper {
 		public Id id {get; set;}
 		public String name {get; set;}
 		public Date startDate {get; set;}
