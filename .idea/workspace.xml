@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,28 +74,7 @@
       <workItem from="1658474067301" duration="15130000" />
       <workItem from="1658559837683" duration="26604000" />
       <workItem from="1658643074379" duration="5543000" />
-      <workItem from="1658666059691" duration="1230000" />
-    </task>
-    <task id="LOCAL-00075" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658596882820</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1658596882820</updated>
-    </task>
-    <task id="LOCAL-00076" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658596958081</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1658596958082</updated>
-    </task>
-    <task id="LOCAL-00077" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658597031309</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1658597031309</updated>
+      <workItem from="1658666059691" duration="1572000" />
     </task>
     <task id="LOCAL-00078" summary="added trigger to VacationRequest__c to set manager">
       <created>1658597235259</created>
@@ -421,7 +398,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658647836585</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="added toast messages to error and success request">
+      <created>1658669156540</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1658669156541</updated>
+    </task>
+    <task id="LOCAL-00125" summary="added toast messages to error and success request">
+      <created>1658669267125</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1658669267125</updated>
+    </task>
+    <task id="LOCAL-00126" summary="added toast messages to error and success request">
+      <created>1658669401360</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1658669401362</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +454,8 @@
     <MESSAGE value="fixed requestTrigger.trigger" />
     <MESSAGE value="added name setting for request" />
     <MESSAGE value="fixed name setting for request" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed name setting for request" />
+    <MESSAGE value="added toast messages to error and success request" />
+    <option name="LAST_COMMIT_MESSAGE" value="added toast messages to error and success request" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
