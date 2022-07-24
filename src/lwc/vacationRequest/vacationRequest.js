@@ -42,6 +42,12 @@ export default class VacationRequest extends LightningElement {
     }
 
     closeRequestWindow() {
+        getRequests().then(result => {
+            this.requests = result;
+            console.log(this.requests);
+        }).catch(error => {
+            this.error = error;
+        });
         this.modelWindow = false;
     }
 
@@ -61,11 +67,6 @@ export default class VacationRequest extends LightningElement {
             variant: 'Success'
         });
         this.dispatchEvent(evt);
-        getRequests().then(result => {
-            this.requests = result;
-            console.log(this.requests);
-        }).catch(error => {
-            this.error = error;
-        });
+
     }
 }
