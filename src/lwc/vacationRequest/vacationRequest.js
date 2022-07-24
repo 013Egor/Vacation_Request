@@ -28,8 +28,6 @@ export default class VacationRequest extends LightningElement {
         getRequests().then(result => {
             this.requests = result;
             console.log(this.requests);
-            this.requests.concat(this.f);
-            console.log(this.requests);
         }).catch(error => {
             this.error = error;
         });
