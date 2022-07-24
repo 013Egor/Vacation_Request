@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
-    </list>
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,28 +73,7 @@
       <workItem from="1658559837683" duration="26604000" />
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
-      <workItem from="1658672701951" duration="15421000" />
-    </task>
-    <task id="LOCAL-00146" summary="test">
-      <created>1658672907901</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1658672907901</updated>
-    </task>
-    <task id="LOCAL-00147" summary="added list of requests">
-      <created>1658673106483</created>
-      <option name="number" value="00147" />
-      <option name="presentableId" value="LOCAL-00147" />
-      <option name="project" value="LOCAL" />
-      <updated>1658673106483</updated>
-    </task>
-    <task id="LOCAL-00148" summary="added list of requests">
-      <created>1658675085053</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1658675085057</updated>
+      <workItem from="1658672701951" duration="15830000" />
     </task>
     <task id="LOCAL-00149" summary="added list of requests">
       <created>1658675437284</created>
@@ -420,7 +397,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658692424139</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="added buttons to remove, submit, approve request">
+      <created>1658692507293</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1658692507293</updated>
+    </task>
+    <task id="LOCAL-00196" summary="added buttons to remove, submit, approve request">
+      <created>1658692563364</created>
+      <option name="number" value="00196" />
+      <option name="presentableId" value="LOCAL-00196" />
+      <option name="project" value="LOCAL" />
+      <updated>1658692563365</updated>
+    </task>
+    <task id="LOCAL-00197" summary="added buttons to remove, submit, approve request">
+      <created>1658692644272</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1658692644272</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
