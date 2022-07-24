@@ -18,22 +18,14 @@ export default class VacationRequest extends LightningElement {
 
     @track requests;
     @track error;
-    f = [{
-        'Type': '223'
-    }]
 
-    handleLoad() {
-
+    connectedCallback() {
         getRequests().then(result => {
             this.requests = result;
             console.log(this.requests);
         }).catch(error => {
             this.error = error;
         });
-    }
-
-    getUserName(id) {
-        return getUserName(id);
     }
 
     openRequestWindow() {

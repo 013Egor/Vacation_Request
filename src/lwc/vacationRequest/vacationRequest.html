@@ -2,7 +2,7 @@
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
             <div class="slds-m-around_medium">
                 <p class="slds-m-bottom_small">
-                    <lightning-button label="Load Contacts" onclick={handleLoad}></lightning-button>
+                    <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
                 </p>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
