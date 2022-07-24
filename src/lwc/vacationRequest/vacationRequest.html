@@ -6,7 +6,7 @@
                 </p>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
-                        <p key={request.Id}>{request.UserName}, {request.ManagerName}, {request.OwnerId}, {request.StartDate__c}, {request.EndDate__c}, {request.WorkingDays__c}, {request.Manager__c}</p>
+                        <p key={request.Id}>{getUserName(request.OwnerId)}, {request.ManagerName}, {request.OwnerId}, {request.StartDate__c}, {request.EndDate__c}, {request.WorkingDays__c}, {request.Manager__c}</p>
                     </template>
                 </template>
                 <template if:true={error}>
