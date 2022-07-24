@@ -7,12 +7,7 @@
                 <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
-                        <div if:true={myList}>
-                            <p key={request.Id} if:true={id==request.userId}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
-                        </div>
-                        <div if:false={myList}>
-                            <p key={request.Id}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
-                        </div>
+                        <p key={request.Id} if:true={id==request.userId}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
                     </template>
                 </template>
                 <template if:true={error}>
