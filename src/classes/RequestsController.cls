@@ -24,7 +24,7 @@ public with sharing class RequestsController {
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
 			temp.managerName = managerName;
-
+			System.debug(temp);
 			requestList.add(temp);
 		}
 
