@@ -23,15 +23,16 @@ public with sharing class RequestsController {
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
 			temp.id = v.Id;
-			for (User person : allUsers) {
-				if (v.CreatedById == person.Id) {
-					temp.name = person.Name;
-				}
-			}
+//			for (User person : allUsers) {
+//				if (v.Manager__c == person.Id) {
+//					temp.managerName = person.Name;
+//				}
+//			}
+			temp.managerName = v.Manager__r.Name;
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
-			temp.managerName = 'managerName';
+
 			System.debug(temp);
 			requestList.add(temp);
 		}
