@@ -15,6 +15,16 @@ public with sharing class RequestsController {
 		public String managerName {get; set;}
 		@AuraEnabled
 		public String userId {get; set;}
+		@AuraEnabled
+		public Boolean isManager {get; set;}
+		@AuraEnabled
+		public Boolean isUser {get; set;}
+		@AuraEnabled
+		public Boolean isNew {get; set;}
+		@AuraEnabled
+		public Boolean isSubmitted {get; set;}
+		@AuraEnabled
+		public Boolean isApproved {get; set;}
 	}
 
 	@AuraEnabled(cacheable=true)
@@ -31,6 +41,11 @@ public with sharing class RequestsController {
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
 			temp.userId = v.Id;
+			temp.isManager = v.Manager__c == UserInfo.getUserId();
+			temp.isUser = v.CreatedById == UserInfo.getUserId();
+			temp.isNew = v.Status__c == Vacation_Request__c.Status__c.New;
+			temp.isSubmitted = v.Status__c == Vacation_Request__c.Status__c.Submitted;
+			temp.isApproved = v.Status__c == Vacation_Request__c.Status__c.Approved;
 
 			requestList.add(temp);
 		}
