@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,21 +74,7 @@
       <workItem from="1658474067301" duration="15130000" />
       <workItem from="1658559837683" duration="26604000" />
       <workItem from="1658643074379" duration="5543000" />
-      <workItem from="1658666059691" duration="3488000" />
-    </task>
-    <task id="LOCAL-00089" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658600866527</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1658600866528</updated>
-    </task>
-    <task id="LOCAL-00090" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658601203149</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1658601203149</updated>
+      <workItem from="1658666059691" duration="3829000" />
     </task>
     <task id="LOCAL-00091" summary="added trigger to VacationRequest__c to set manager">
       <created>1658601296841</created>
@@ -420,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658671289145</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="added apex class to show list of requests">
+      <created>1658671438253</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1658671438253</updated>
+    </task>
+    <task id="LOCAL-00139" summary="added apex class to show list of requests">
+      <created>1658671638554</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1658671638560</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
