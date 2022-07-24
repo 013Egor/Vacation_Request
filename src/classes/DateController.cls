@@ -7,7 +7,8 @@ public class DateController {
 			return endWeek - startDate.toStartOfWeek().daysBetween(startDate);
 		}
 		startWeek = 5 - startWeek;
-		Integer weeksAmount = startDate.daysBetween(endDate) / 7 - 1;
+		Integer weeksAmount = startDate.daysBetween(endDate) / 7;
+		weeksAmount = weeksAmount == 0 ? weeksAmount : weeksAmount - 1;
 
 		return startWeek + endWeek + weeksAmount * 5;
 	}
