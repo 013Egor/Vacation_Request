@@ -43,9 +43,9 @@ public with sharing class RequestsController {
 			temp.userId = v.Id;
 			temp.isManager = v.Manager__c == UserInfo.getUserId();
 			temp.isUser = v.CreatedById == UserInfo.getUserId();
-			temp.isNew = v.Status__c == Vacation_Request__c.Status__c.New;
-			temp.isSubmitted = v.Status__c == Vacation_Request__c.Status__c.Submitted;
-			temp.isApproved = v.Status__c == Vacation_Request__c.Status__c.Approved;
+			temp.isNew = v.Status__c == 'New';
+			temp.isSubmitted = v.Status__c == 'Submitted';
+			temp.isApproved = v.Status__c == 'Approved';
 
 			requestList.add(temp);
 		}
