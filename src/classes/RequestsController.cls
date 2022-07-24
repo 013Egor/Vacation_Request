@@ -1,11 +1,17 @@
 public with sharing class RequestsController {
 
 	public with sharing class RequestWrapper {
+		@AuraEnabled
 		public Id id {get; set;}
+		@AuraEnabled
 		public String name {get; set;}
+		@AuraEnabled
 		public Date startDate {get; set;}
+		@AuraEnabled
 		public Date endDate {get; set;}
+		@AuraEnabled
 		public Decimal workingDays {get; set;}
+		@AuraEnabled
 		public String managerName {get; set;}
 	}
 
