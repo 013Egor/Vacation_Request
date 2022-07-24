@@ -17,18 +17,17 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getRequests() {
-		List<Vacation_Request__c> l = [SELECT Id, Name, OwnerId, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Manager__r from Vacation_Request__c];
+		List<Vacation_Request__c> l = [SELECT Id, Name, OwnerId, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c];
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 		User[] allUsers = [SELECT Id, Name from User];
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
 			temp.id = v.Id;
-//			for (User person : allUsers) {
-//				if (v.Manager__c == person.Id) {
-//					temp.managerName = person.Name;
-//				}
-//			}
-			temp.managerName = v.Manager__r.Name;
+			for (User person : allUsers) {
+				if (v.Manager__c == person.Id) {
+					temp.managerName = person.Name;
+				}
+			}
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
