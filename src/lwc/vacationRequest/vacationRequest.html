@@ -11,7 +11,7 @@
             </p>
             <template if:true={requests}>
                 <template for:each={requests} for:item="request">
-                    <p key={request.Id}>{request.OwnerIr}, {request.RequestType__c}, {request.StartDate__c}, {request.EndDate__c}, ({request.WorkingDays__c} days), {request.Manager__c}</p>
+                    <p key={request.Id}>{request.WorkingDays__c} days</p>
                 </template>
             </template>
             <template if:true={error}>
