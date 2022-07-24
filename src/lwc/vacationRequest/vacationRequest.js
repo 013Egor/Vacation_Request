@@ -18,13 +18,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
 
-    handleLoad2() {
-        // const evt = new ShowToastEvent({
-        //     title: 'Error',
-        //     message: 'dfdf',
-        //     variant: 'error'
-        // });
-        // this.dispatchEvent(evt);
+    handleLoad() {
         getRequests().then(result => {
             this.requests = result;
         }).catch(error => {
