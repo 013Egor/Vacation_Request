@@ -73,4 +73,8 @@ public with sharing class RequestsController {
 
 		return requestList;
 	}
+
+	public static void remove(String id) {
+		delete [SELECT Id from Vacation_Request__c WHERE Id =: id];
+	}
 }

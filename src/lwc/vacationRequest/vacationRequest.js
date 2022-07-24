@@ -8,6 +8,7 @@ import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
 import getMyRequests from '@salesforce/apex/RequestsController.getMyRequests';
+import remove from '@salesforce/apex/RequestsController.remove';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
@@ -47,6 +48,9 @@ export default class VacationRequest extends LightningElement {
         });
     }
 
+    removeRequest(event) {
+        remove(event.target.value);
+    }
     openRequestWindow() {
         if (this.contact.data) {
             this.modelWindow = true;
