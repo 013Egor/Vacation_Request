@@ -8,13 +8,13 @@
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
                         <p key={request.Id}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
-                        <p class="slds-m-bottom_small" if:true={request.isUser}>
+                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
                             <lightning-button label="Remove"></lightning-button>
                         </p>
-                        <p class="slds-m-bottom_small" if:true={request.isUser}>
+                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
                             <lightning-button label="Submit" onclick={openRequestWindow}></lightning-button>
                         </p>
-                        <p class="slds-m-bottom_small" if:true={request.isManager}>
+                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isManager}>
                             <lightning-button label="Approve" onclick={openRequestWindow}></lightning-button>
                         </p>
                     </template>
