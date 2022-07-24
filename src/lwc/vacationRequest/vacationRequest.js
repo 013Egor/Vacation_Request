@@ -19,7 +19,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
     f = [{
-        Type: "23"
+        'Type': '223'
     }]
 
     users;
