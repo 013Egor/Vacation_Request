@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" beforeDir="false" afterPath="$PROJECT_DIR$/src/triggers/requestTrigger.trigger" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +17,10 @@
         <option value="HTML File" />
         <option value="ApexTrigger" />
         <option value="ApexTrigger.trigger-meta" />
-        <option value="ApexClass" />
-        <option value="ApexClass.cls-meta" />
         <option value="LightningWebComponent" />
         <option value="LightningWebComponent.js-meta" />
+        <option value="ApexClass" />
+        <option value="ApexClass.cls-meta" />
       </list>
     </option>
   </component>
@@ -37,16 +38,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "UseStandardLocationKey": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;UseStandardLocationKey&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,27 +60,7 @@
       <workItem from="1658385843812" duration="6353000" />
       <workItem from="1658474067301" duration="15130000" />
       <workItem from="1658559837683" duration="26604000" />
-    </task>
-    <task id="LOCAL-00066" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658594077085</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1658594077085</updated>
-    </task>
-    <task id="LOCAL-00067" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658594241856</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1658594241857</updated>
-    </task>
-    <task id="LOCAL-00068" summary="added trigger to VacationRequest__c to set manager">
-      <created>1658595224565</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1658595224565</updated>
+      <workItem from="1658643074379" duration="602000" />
     </task>
     <task id="LOCAL-00069" summary="added trigger to VacationRequest__c to set manager">
       <created>1658595693765</created>
@@ -403,7 +384,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658608919483</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="clear html and js">
+      <created>1658609176494</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1658609176494</updated>
+    </task>
+    <task id="LOCAL-00116" summary="fix html">
+      <created>1658609295300</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1658609295300</updated>
+    </task>
+    <task id="LOCAL-00117" summary="fix html">
+      <created>1658609453458</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1658609453458</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,6 +414,17 @@
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deploy with ApexVCS" />
     <MESSAGE value="added trigger to set manager to request" />
@@ -419,6 +432,8 @@
     <MESSAGE value="added trigger to VacationRequest__c to set manager" />
     <MESSAGE value="a" />
     <MESSAGE value="added check for manager" />
-    <option name="LAST_COMMIT_MESSAGE" value="added check for manager" />
+    <MESSAGE value="clear html and js" />
+    <MESSAGE value="fix html" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix html" />
   </component>
 </project>
