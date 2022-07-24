@@ -1,10 +1,20 @@
 <template>
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
-        <div class="slds-m-around_medium">
-            <p class="slds-m-bottom_small">
-                <lightning-button label="New request" onclick={openRequestWindow}></lightning-button>
-            </p>
-        </div>
+            <div class="slds-m-around_medium">
+                <p class="slds-m-bottom_small">
+                    <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
+                </p>
+                <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+                <template if:true={requests}>
+                    <template for:each={requests} for:item="request">
+                        <p key={request.Id}>{request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
+                    </template>
+                </template>
+                <template if:true={error}>
+                    <div>Error</div>
+                </template>
+            </div>
+
     </lightning-card>
     <template if:true={modelWindow}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
@@ -16,11 +26,15 @@
                     <lightning-record-form
                             object-api-name="Vacation_Request__c"
                             fields={fields}
+                            onsuccess={handleSuccess}
                             oncancel={closeRequestWindow}
+                            onsubmit={closeRequestWindow}
+                            onerror={showErrorMessage}
                     >
                     </lightning-record-form>
                 </div>
             </div>
+
         </section>
         <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
     </template>

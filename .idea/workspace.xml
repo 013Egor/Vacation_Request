@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/ManagerController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/ManagerController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,35 +76,7 @@
       <workItem from="1658559837683" duration="26604000" />
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
-      <workItem from="1658672701951" duration="13143000" />
-    </task>
-    <task id="LOCAL-00137" summary="added apex class to show list of requests">
-      <created>1658671289144</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1658671289145</updated>
-    </task>
-    <task id="LOCAL-00138" summary="added apex class to show list of requests">
-      <created>1658671438253</created>
-      <option name="number" value="00138" />
-      <option name="presentableId" value="LOCAL-00138" />
-      <option name="project" value="LOCAL" />
-      <updated>1658671438253</updated>
-    </task>
-    <task id="LOCAL-00139" summary="added apex class to show list of requests">
-      <created>1658671638554</created>
-      <option name="number" value="00139" />
-      <option name="presentableId" value="LOCAL-00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1658671638560</updated>
-    </task>
-    <task id="LOCAL-00140" summary="added apex class to show list of requests">
-      <created>1658671737091</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1658671737092</updated>
+      <workItem from="1658672701951" duration="13657000" />
     </task>
     <task id="LOCAL-00141" summary="added apex class to show list of requests">
       <created>1658671940414</created>
@@ -424,7 +393,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658688905677</updated>
     </task>
-    <option name="localTasksCounter" value="186" />
+    <task id="LOCAL-00186" summary="added check box">
+      <created>1658689784506</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1658689784506</updated>
+    </task>
+    <task id="LOCAL-00187" summary="added check box">
+      <created>1658689929563</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1658689929563</updated>
+    </task>
+    <task id="LOCAL-00188" summary="added check box">
+      <created>1658689964589</created>
+      <option name="number" value="00188" />
+      <option name="presentableId" value="LOCAL-00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1658689964589</updated>
+    </task>
+    <task id="LOCAL-00189" summary="added check box">
+      <created>1658690040564</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1658690040564</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +460,8 @@
     <MESSAGE value="added apex class to show list of requests" />
     <MESSAGE value="test" />
     <MESSAGE value="added list of requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added list of requests" />
+    <MESSAGE value="added check box" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check box" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
