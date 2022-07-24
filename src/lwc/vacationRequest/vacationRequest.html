@@ -1,21 +1,20 @@
 <template>
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
-        <div class="slds-m-around_medium">
-            <p class="slds-m-bottom_small">
-                <lightning-button label="New request" onclick={openRequestWindow}></lightning-button>
-            </p>
-        </div>
-        <div class="slds-m-around_medium">
-            <p class="slds-m-bottom_small">
-                <lightning-button label="Load Contacts" onclick={handleLoad2}></lightning-button>
-            </p>
-            <template if:true={requests}>
-                <div>Ok</div>
-            </template>
-            <template if:true={error}>
-                <div>Error</div>
-            </template>
-        </div>
+        <template>
+            <div class="slds-m-around_medium">
+                <p class="slds-m-bottom_small">
+                    <lightning-button label="Load Contacts" onclick={handleLoad2}></lightning-button>
+                </p>
+                <template if:true={requests}>
+                    <div>Ok</div>
+                </template>
+                <template if:true={error}>
+                    <div>Error</div>
+                </template>
+            </div>
+        </template>
+
+
     </lightning-card>
     <template if:true={modelWindow}>
         <section role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-heading-01" class="slds-modal slds-fade-in-open">
