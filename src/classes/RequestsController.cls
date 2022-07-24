@@ -8,7 +8,7 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static String getUserName(String index) {
-		Integer id = Integer.valueOf(index);
+		Id id = Id.valueOf(index);
 
 		return [SELECT Name from User where Id =: id][0].Name;
 	}
