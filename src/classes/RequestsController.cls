@@ -21,7 +21,7 @@ public with sharing class RequestsController {
 	public static List<RequestWrapper> getRequests() {
 		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c];
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
-		User[] allUsers = [SELECT Id, Name from User];
+
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
 			temp.name = [SELECT Id, Name from User WHERE Id =: v.CreatedById].Name;
@@ -39,9 +39,23 @@ public with sharing class RequestsController {
 	}
 
 	@AuraEnabled(cacheable=true)
-	public static String getUserName(String index) {
-		Id id = Id.valueOf(index);
+	public static List<RequestWrapper> getMyRequests() {
+		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c WHERE Id =: UserInfo.getUserId()];
+		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 
-		return [SELECT Name from User where Id =: id][0].Name;
+		for (Vacation_Request__c v : l) {
+			RequestWrapper temp = new RequestWrapper();
+			temp.name = UserInfo.getName();
+			temp.managerName = [SELECT Id, Name from User WHERE Id =: v.Manager__c].Name;
+			temp.id = v.Id;
+			temp.startDate = v.StartDate__c;
+			temp.endDate = v.EndDate__c;
+			temp.workingDays = v.WorkingDays__c;
+			temp.userId = v.Id;
+
+			requestList.add(temp);
+		}
+
+		return requestList;
 	}
 }
