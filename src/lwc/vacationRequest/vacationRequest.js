@@ -15,7 +15,7 @@ export default class VacationRequest extends LightningElement {
 
     @wire(hasManager) contact;
 
-    @track request;
+    @track requests;
     @track error;
 
     handleLoad() {
