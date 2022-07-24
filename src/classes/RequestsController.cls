@@ -19,13 +19,15 @@ public with sharing class RequestsController {
 	public static List<RequestWrapper> getRequests() {
 		List<Vacation_Request__c> l = [SELECT Id, Name, OwnerId, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c];
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
-
+		User[] allUsers = [SELECT Id, Name from User];
 		for (Vacation_Request__c v : l) {
-			User userName = [SELECT Id, Name from User where User.Id =: v.CreatedById limit 1][0];
-//			String managerName = [SELECT Name from User where Id =: v.Manager__c limit 1][0].Name;
 			RequestWrapper temp = new RequestWrapper();
 			temp.id = v.Id;
-			temp.name = userName.Name;
+			for (User person : allUsers) {
+				if (v.CreatedById == person.Id) {
+					temp.name = person.Name;
+				}
+			}
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
