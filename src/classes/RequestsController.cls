@@ -21,11 +21,11 @@ public with sharing class RequestsController {
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 
 		for (Vacation_Request__c v : l) {
-			String userName = [SELECT Id, Name from User where Id =: v.CreatedById limit 1][0].Name;
+			User userName = [SELECT Id, Name from User where User.Id =: v.CreatedById limit 1][0];
 //			String managerName = [SELECT Name from User where Id =: v.Manager__c limit 1][0].Name;
 			RequestWrapper temp = new RequestWrapper();
 			temp.id = v.Id;
-			temp.name = userName;
+			temp.name = userName.Name;
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
