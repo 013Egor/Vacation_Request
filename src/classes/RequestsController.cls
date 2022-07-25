@@ -62,8 +62,18 @@ public with sharing class RequestsController {
 	@AuraEnabled
 	public static void setSubmitStatus(Id requestId) {
 		List<Vacation_Request__c> l = [SELECT Id, Status__c FROM Vacation_Request__c WHERE Id =: requestId];
+		List<Schema.PicklistEntry> values = Vacation_Request__c.Status__c.getDescribe().getPicklistValues();
+
+		Schema.PicklistEntry value;
+		for (Schema.PicklistEntry v : values) {
+			if (v.value == 'Submitted') {
+				value = v;
+				break;
+			}
+		}
+
 		for (Vacation_Request__c request : l) {
-			request.Status__c = 'Submitted';
+			request.Status__c = value.value;
 		}
 
 		update l;

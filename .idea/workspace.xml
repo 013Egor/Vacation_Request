@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,28 +89,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="18751000" />
-    </task>
-    <task id="LOCAL-00240" summary="added remove logic">
-      <created>1658736670264</created>
-      <option name="number" value="00240" />
-      <option name="presentableId" value="LOCAL-00240" />
-      <option name="project" value="LOCAL" />
-      <updated>1658736670264</updated>
-    </task>
-    <task id="LOCAL-00241" summary="added remove logic">
-      <created>1658736882255</created>
-      <option name="number" value="00241" />
-      <option name="presentableId" value="LOCAL-00241" />
-      <option name="project" value="LOCAL" />
-      <updated>1658736882255</updated>
-    </task>
-    <task id="LOCAL-00242" summary="added remove logic">
-      <created>1658736960329</created>
-      <option name="number" value="00242" />
-      <option name="presentableId" value="LOCAL-00242" />
-      <option name="project" value="LOCAL" />
-      <updated>1658736960329</updated>
+      <workItem from="1658727817832" duration="19232000" />
     </task>
     <task id="LOCAL-00243" summary="added remove logic">
       <created>1658737095964</created>
@@ -436,7 +413,28 @@
       <option name="project" value="LOCAL" />
       <updated>1658747505546</updated>
     </task>
-    <option name="localTasksCounter" value="289" />
+    <task id="LOCAL-00289" summary="added submit function">
+      <created>1658747918050</created>
+      <option name="number" value="00289" />
+      <option name="presentableId" value="LOCAL-00289" />
+      <option name="project" value="LOCAL" />
+      <updated>1658747918050</updated>
+    </task>
+    <task id="LOCAL-00290" summary="added submit function">
+      <created>1658748011816</created>
+      <option name="number" value="00290" />
+      <option name="presentableId" value="LOCAL-00290" />
+      <option name="project" value="LOCAL" />
+      <updated>1658748011816</updated>
+    </task>
+    <task id="LOCAL-00291" summary="added submit function">
+      <created>1658748050861</created>
+      <option name="number" value="00291" />
+      <option name="presentableId" value="LOCAL-00291" />
+      <option name="project" value="LOCAL" />
+      <updated>1658748050861</updated>
+    </task>
+    <option name="localTasksCounter" value="292" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,7 +537,8 @@
     <MESSAGE value="added buttons to remove, submit, approve request" />
     <MESSAGE value="added remove logic" />
     <MESSAGE value="fixed view my requests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed view my requests" />
+    <MESSAGE value="added submit function" />
+    <option name="LAST_COMMIT_MESSAGE" value="added submit function" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
