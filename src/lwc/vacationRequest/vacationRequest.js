@@ -75,11 +75,13 @@ export default class VacationRequest extends LightningElement {
                         variant: 'success'
                     })
                 );
+
+                return refreshApex(this.requests);
             })
             .catch(error => {
                 console.log(error);
             });
-        refreshApex(this.requests);
+
     }
 
 
