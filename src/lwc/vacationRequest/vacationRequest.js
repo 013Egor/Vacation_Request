@@ -28,11 +28,12 @@ export default class VacationRequest extends LightningElement {
     removeRequest(event) {
         deleteRecord(event.target.value).then(() => {
             const evt = new ShowToastEvent({
-                title: 'Error',
+                title: 'Ok',
                 message: event.target.value,
                 variant: 'success'
             })
             this.dispatchEvent(evt);
+            return refreshApex(this.requests);
         }).catch(error => {
             const evt = new ShowToastEvent({
                 title: 'Error',
@@ -41,8 +42,6 @@ export default class VacationRequest extends LightningElement {
             });
             this.dispatchEvent(evt);
         });
-        this.delayTimeout = setTimeout(() => { }, 300);
-        refreshApex(this.requests);
     }
 
     openRequestWindow() {
