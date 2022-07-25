@@ -59,6 +59,7 @@ public with sharing class RequestsController {
 		return requestList;
 	}
 
+	@AuraEnabled
 	public static void setSubmitStatus(Id requestId) {
 		List<Vacation_Request__c> l = [SELECT Id, Status__c FROM Vacation_Request__c WHERE Id =: requestId];
 		for (Vacation_Request__c request : l) {
