@@ -23,7 +23,7 @@ export default class VacationRequest extends LightningElement {
     handleChange(event) {
         this.status = this.status ? false : true;
         console.log(this.status);
-        this.requests = this.temp.data;
+        this.requests = this.temp;
     }
 
     removeRequest(event) {
