@@ -25,7 +25,7 @@ export default class VacationRequest extends LightningElement {
 
 
     handleChange(event) {
-        this.myList = event.target.value;
+        this.myList = this.myList ? false : true;
         console.log(this.myList);
         if (this.myList == true) {
             getMyRequests().then(result => {
