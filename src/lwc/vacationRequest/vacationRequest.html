@@ -13,7 +13,7 @@
                                 <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
                             </p>
                             <p class="slds-m-bottom_small" if:true={request.isUser}>
-                                <lightning-button label="Submit" if:true={request.isNew}></lightning-button>
+                                <lightning-button label="Submit" if:true={request.isNew} value={request.id} onclick={submitRequest}></lightning-button>
                             </p>
                             <p class="slds-m-bottom_small" if:true={request.isManager}>
                                 <lightning-button label="Approve" if:true={request.isSubmitted}></lightning-button>
