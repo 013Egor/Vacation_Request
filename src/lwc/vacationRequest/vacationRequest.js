@@ -1,14 +1,16 @@
 import {LightningElement, wire, track} from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { deleteRecord } from  'lightning/uiRecordApi';
+import { updateRecord } from  'lightning/uiRecordApi';
 
 import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestType__c';
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
 import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
+import VACATION_ID from '@salesforce/schema/Vacation_Request__c.Id';
+import STATUS_FIELD from '@salesforce/schema/Vacation_Request__c.Status__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
-import setSubmitStatus from '@salesforce/apex/RequestsController.setSubmitStatus';
 import { refreshApex} from '@salesforce/apex';
 
 export default class VacationRequest extends LightningElement {
@@ -60,13 +62,23 @@ export default class VacationRequest extends LightningElement {
     }
 
     submitRequest(event) {
-        const evt = new ShowToastEvent({
-            title: 'Error',
-            message: event.target.value,
-            variant: 'error'
-        });
-        this.dispatchEvent(evt);
-        setSubmitStatus(event.target.value).then(result => {console.log(result)});
+        const fields = {};
+        fields[VACATION_ID.fieldApiName] = event.target.value;
+        fields[STATUS_FIELD.fieldApiName] = 'Submitted';
+        const recordInput = { fields };
+        updateRecord(recordInput)
+            .then(() => {
+                this.dispatchEvent(
+                    new ShowToastEvent({
+                        title: 'Success',
+                        message: 'Case Updated',
+                        variant: 'success'
+                    })
+                );
+            })
+            .catch(error => {
+                console.log(error);
+            });
         refreshApex(this.requests);
     }
 
