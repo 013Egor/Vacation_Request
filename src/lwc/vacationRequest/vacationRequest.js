@@ -14,7 +14,7 @@ export default class VacationRequest extends LightningElement {
     modelWindow = false;
 
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
-    status = false;
+    status = true;
 
     @wire(hasManager) contact;
 
