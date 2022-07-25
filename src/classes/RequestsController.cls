@@ -78,7 +78,7 @@ public with sharing class RequestsController {
 	public static List<String> remove(String idRequest) {
 		Id testId = Id.valueOf(idRequest);
 		List<Vacation_Request__c> l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
-		delete [SELECT Id from Vacation_Request__c WHERE Id =: testId];
+		delete l;
 		List<String> r = new List<String>();
 		for (Vacation_Request__c v : l) {
 			r.add(v.Name);
