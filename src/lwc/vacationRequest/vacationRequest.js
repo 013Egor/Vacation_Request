@@ -16,7 +16,7 @@ export default class VacationRequest extends LightningElement {
     status = false;
     @wire(hasManager) contact;
 
-    @wire(getRequests, {statusReq: true}) requests;
+    @wire(getRequests) requests;
 
 
     handleChange(event) {
