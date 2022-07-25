@@ -19,7 +19,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
     connectedCallback() {
-        this.requests = getRequests(this.status).then(result => {
+        getRequests(this.status).then(result => {
             this.requests = result;
             console.log(this.requests);
         }).catch(error => {
