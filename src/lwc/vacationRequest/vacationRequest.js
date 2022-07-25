@@ -16,15 +16,13 @@ export default class VacationRequest extends LightningElement {
     status = false;
     @wire(hasManager) contact;
 
-    @wire(getRequests, {status: '$status'}) requests;
-
+    @track requests;
 
     handleChange(event) {
-        window.clearTimeout(this.delayTimeout);
-        const searchKey = event.target.value;
-        this.delayTimeout = setTimeout(() => {
-            this.status = this.status ? false : true;
-        }, 300);
+        this.status = this.status ? false : true;
+        getRequests({status: this.status}).then(result => {
+            this.requests = result;
+        })
         console.log(this.status);
     }
 
@@ -65,6 +63,9 @@ export default class VacationRequest extends LightningElement {
         }).catch(error => {
             this.error = error;
         });
+        getRequests({status: this.status}).then(result => {
+            this.requests = result;
+        })
         this.modelWindow = false;
     }
 
@@ -83,6 +84,9 @@ export default class VacationRequest extends LightningElement {
             message: 'Request is sent',
             variant: 'Success'
         });
+        getRequests({status: this.status}).then(result => {
+            this.requests = result;
+        })
         this.dispatchEvent(evt);
 
     }
