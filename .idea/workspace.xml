@@ -74,21 +74,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="8313000" />
-    </task>
-    <task id="LOCAL-00188" summary="added check box">
-      <created>1658689964589</created>
-      <option name="number" value="00188" />
-      <option name="presentableId" value="LOCAL-00188" />
-      <option name="project" value="LOCAL" />
-      <updated>1658689964589</updated>
-    </task>
-    <task id="LOCAL-00189" summary="added check box">
-      <created>1658690040564</created>
-      <option name="number" value="00189" />
-      <option name="presentableId" value="LOCAL-00189" />
-      <option name="project" value="LOCAL" />
-      <updated>1658690040564</updated>
+      <workItem from="1658727817832" duration="8630000" />
     </task>
     <task id="LOCAL-00190" summary="added check box">
       <created>1658690289485</created>
@@ -419,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658735940742</updated>
     </task>
-    <option name="localTasksCounter" value="237" />
+    <task id="LOCAL-00237" summary="added remove logic">
+      <created>1658736278585</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736278585</updated>
+    </task>
+    <task id="LOCAL-00238" summary="added remove logic">
+      <created>1658736378316</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736378316</updated>
+    </task>
+    <option name="localTasksCounter" value="239" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -27,7 +27,7 @@ public with sharing class RequestsController {
 		public Boolean isApproved {get; set;}
 	}
 
-	@AuraEnabled(cacheable=false)
+	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getRequests(Boolean status) {
 		List<Vacation_Request__c> l;
 		if (status) {
