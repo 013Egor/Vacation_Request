@@ -64,7 +64,7 @@ public with sharing class RequestsController {
 
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
-			temp.name = [SELECT Id, Name from User WHERE Id =: v.CreatedById].Name;
+			temp.name = UserInfo.getName();
 			temp.managerName = [SELECT Id, Name from User WHERE Id =: v.Manager__c].Name;
 			temp.id = v.Id;
 			temp.startDate = v.StartDate__c;
