@@ -8,7 +8,7 @@ import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
-import getMyRequests from '@salesforce/apex/RequestsController.getMyRequests';
+import { refreshApex} from '@salesforce/apex';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
@@ -17,37 +17,12 @@ export default class VacationRequest extends LightningElement {
     status = true;
 
     @wire(hasManager) contact;
-
-    @track requests;
+    @wire(getRequests, {status: '$status'}) requests;
     @track error;
-
-    connectedCallback() {
-        this.updateList();
-    }
-
-    updateList() {
-        console.log(this.status);
-        if (this.status == true) {
-            getMyRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            }).catch(error => {
-                this.error = error;
-            });
-        } else {
-            getRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            }).catch(error => {
-                this.error = error;
-            });
-        }
-    }
 
     handleChange(event) {
         this.status = this.status ? false : true;
-
-        this.updateList();
+        refreshApex(this.requests);
     }
 
     removeRequest(event) {
@@ -66,7 +41,7 @@ export default class VacationRequest extends LightningElement {
             });
             this.dispatchEvent(evt);
         });
-        this.updateList();
+        refreshApex(this.requests);
     }
 
     openRequestWindow() {
@@ -83,7 +58,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     closeRequestWindow() {
-        this.updateList();
+        refreshApex(this.requests);
 
         this.modelWindow = false;
     }
@@ -104,7 +79,7 @@ export default class VacationRequest extends LightningElement {
             variant: 'Success'
         });
 
-        this.updateList();
+        refreshApex(this.requests);
 
         this.dispatchEvent(evt);
     }

@@ -5,8 +5,8 @@
                     <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
                 </p>
                 <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
-                <template if:true={requests}>
-                    <template for:each={requests} for:item="request">
+                <template if:true={requests.data}>
+                    <template for:each={requests.data} for:item="request">
                         <div key={request.Id} class="slds-m-around_medium">
                             <p>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
                             <p class="slds-m-bottom_small" if:true={request.isUser}>
