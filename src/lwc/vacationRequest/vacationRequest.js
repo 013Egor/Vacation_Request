@@ -60,19 +60,18 @@ export default class VacationRequest extends LightningElement {
                 title: 'Error',
                 message: event.target.value,
                 variant: 'success'
-            }).catch(error => {
-                const evt = new ShowToastEvent({
-                    title: 'Error',
-                    message: event.target.value,
-                    variant: 'error'
-                });
-                this.dispatchEvent(evt);
             })
-
             this.dispatchEvent(evt);
-        })
-        this.updateList();
+        }).catch(error => {
+            const evt = new ShowToastEvent({
+                title: 'Error',
+                message: event.target.value,
+                variant: 'error'
+            });
+            this.dispatchEvent(evt);
+        });
 
+        this.updateList();
     }
     openRequestWindow() {
         if (this.contact.data) {
