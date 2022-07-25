@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,35 +76,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="9035000" />
-    </task>
-    <task id="LOCAL-00192" summary="added check box">
-      <created>1658690605284</created>
-      <option name="number" value="00192" />
-      <option name="presentableId" value="LOCAL-00192" />
-      <option name="project" value="LOCAL" />
-      <updated>1658690605284</updated>
-    </task>
-    <task id="LOCAL-00193" summary="added check box">
-      <created>1658690765905</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1658690765905</updated>
-    </task>
-    <task id="LOCAL-00194" summary="added buttons to remove, submit, approve request">
-      <created>1658692424139</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1658692424139</updated>
-    </task>
-    <task id="LOCAL-00195" summary="added buttons to remove, submit, approve request">
-      <created>1658692507293</created>
-      <option name="number" value="00195" />
-      <option name="presentableId" value="LOCAL-00195" />
-      <option name="project" value="LOCAL" />
-      <updated>1658692507293</updated>
+      <workItem from="1658727817832" duration="9349000" />
     </task>
     <task id="LOCAL-00196" summary="added buttons to remove, submit, approve request">
       <created>1658692563364</created>
@@ -422,7 +393,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658736670264</updated>
     </task>
-    <option name="localTasksCounter" value="241" />
+    <task id="LOCAL-00241" summary="added remove logic">
+      <created>1658736882255</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736882255</updated>
+    </task>
+    <task id="LOCAL-00242" summary="added remove logic">
+      <created>1658736960329</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1658736960329</updated>
+    </task>
+    <task id="LOCAL-00243" summary="added remove logic">
+      <created>1658737095964</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737095964</updated>
+    </task>
+    <task id="LOCAL-00244" summary="added remove logic">
+      <created>1658737171773</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737171773</updated>
+    </task>
+    <option name="localTasksCounter" value="245" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
