@@ -16,7 +16,7 @@ export default class VacationRequest extends LightningElement {
     myList = false;
     @wire(hasManager) contact;
 
-    @wire(getRequests, {status: this.myList}) requests;
+    @wire(getRequests, {status: '$myList'}) requests;
 
 
 
