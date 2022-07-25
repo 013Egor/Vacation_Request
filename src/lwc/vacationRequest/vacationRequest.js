@@ -22,7 +22,10 @@ export default class VacationRequest extends LightningElement {
     @track error;
     myList = false;
 
-    updateList() {
+
+
+    handleChange(event) {
+        this.myList = event.target.checked;
         if (this.myList == true) {
             getMyRequests().then(result => {
                 this.requests = result;
@@ -38,11 +41,6 @@ export default class VacationRequest extends LightningElement {
                 this.error = error;
             });
         }
-    }
-
-    handleChange(event) {
-        this.myList = event.target.checked;
-        this.updateList();
     }
 
     connectedCallback() {
@@ -70,8 +68,6 @@ export default class VacationRequest extends LightningElement {
             });
             this.dispatchEvent(evt);
         });
-
-        this.updateList();
     }
     openRequestWindow() {
         if (this.contact.data) {
