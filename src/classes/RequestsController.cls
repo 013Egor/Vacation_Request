@@ -74,7 +74,7 @@ public with sharing class RequestsController {
 		return requestList;
 	}
 
-	@AuraEnabled(cacheable=false)
+	@InvocableMethod
 	public static List<String> remove(String idRequest) {
 		Id testId = Id.valueOf(idRequest);
 		Vacation_Request__c[] l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
