@@ -20,7 +20,11 @@ export default class VacationRequest extends LightningElement {
 
 
     handleChange(event) {
-        this.status = this.status ? false : true;
+        window.clearTimeout(this.delayTimeout);
+        const searchKey = event.target.value;
+        this.delayTimeout = setTimeout(() => {
+            this.status = this.status ? false : true;
+        }, 300);
         console.log(this.status);
     }
 
