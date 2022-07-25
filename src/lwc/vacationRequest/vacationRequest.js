@@ -27,19 +27,23 @@ export default class VacationRequest extends LightningElement {
         });
     }
 
-    handleChange(event) {
-        this.status = this.status ? false : true;
+    updateList() {
         if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
-                console.log(this.requests);
+                console.log(result);
             });
         } else {
             getRequests().then(result => {
                 this.requests = result;
-                console.log(this.requests);
+                console.log(result);
             });
         }
+    }
+
+    handleChange(event) {
+        this.status = this.status ? false : true;
+        this.updateList();
     }
 
     removeRequest(event) {
@@ -74,17 +78,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     closeRequestWindow() {
-        if (this.status == true) {
-            getMyRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            });
-        } else {
-            getRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            });
-        }
+        this.updateList();
 
         this.modelWindow = false;
     }
@@ -105,17 +99,7 @@ export default class VacationRequest extends LightningElement {
             variant: 'Success'
         });
 
-        if (this.status == true) {
-            getMyRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            });
-        } else {
-            getRequests().then(result => {
-                this.requests = result;
-                console.log(this.requests);
-            });
-        }
+        this.updateList();
 
         this.dispatchEvent(evt);
     }
