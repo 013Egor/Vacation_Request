@@ -24,7 +24,7 @@
                         <div key={request.Id} if:false={status}>
                             <p key={request.Id}>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
                             <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
-                                <lightning-button key={request.Id}label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
+                                <lightning-button key={request.Id} label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
                             </p>
                             <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
                                 <lightning-button key={request.Id} label="Submit" if:true={request.isNew}></lightning-button>
