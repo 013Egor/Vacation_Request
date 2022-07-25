@@ -27,7 +27,7 @@ public with sharing class RequestsController {
 		public Boolean isApproved {get; set;}
 	}
 
-	@AuraEnabled(cacheable=true)
+	@AuraEnabled(cacheable=false)
 	public static List<RequestWrapper> getRequests() {
 		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
@@ -53,7 +53,7 @@ public with sharing class RequestsController {
 		return requestList;
 	}
 
-	@AuraEnabled(cacheable=true)
+	@AuraEnabled(cacheable=false)
 	public static List<RequestWrapper> getMyRequests() {
 		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c from Vacation_Request__c WHERE CreatedById =: UserInfo.getUserId()];
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
@@ -72,24 +72,5 @@ public with sharing class RequestsController {
 		}
 
 		return requestList;
-	}
-
-	@InvocableMethod
-	public static List<String> remove(String idRequest) {
-		Id testId = Id.valueOf(idRequest);
-		Vacation_Request__c[] l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
-		List<String> r = new List<String>();
-		try {
-			delete l;
-		} catch (DmlException e) {
-			r.add('Cannot remove');
-			return r;
-		}
-
-		for (Vacation_Request__c v : l) {
-			r.add(v.Name);
-		}
-
-		return r;
 	}
 }
