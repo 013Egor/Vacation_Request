@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,14 +76,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="4653000" />
-    </task>
-    <task id="LOCAL-00172" summary="added list of requests">
-      <created>1658687089197</created>
-      <option name="number" value="00172" />
-      <option name="presentableId" value="LOCAL-00172" />
-      <option name="project" value="LOCAL" />
-      <updated>1658687089197</updated>
+      <workItem from="1658727817832" duration="5127000" />
     </task>
     <task id="LOCAL-00173" summary="added list of requests">
       <created>1658687146366</created>
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658732054107</updated>
     </task>
-    <option name="localTasksCounter" value="221" />
+    <task id="LOCAL-00221" summary="added remove logic">
+      <created>1658732531525</created>
+      <option name="number" value="00221" />
+      <option name="presentableId" value="LOCAL-00221" />
+      <option name="project" value="LOCAL" />
+      <updated>1658732531525</updated>
+    </task>
+    <option name="localTasksCounter" value="222" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

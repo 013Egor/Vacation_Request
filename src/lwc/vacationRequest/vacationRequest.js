@@ -1,5 +1,6 @@
 import {LightningElement, wire, track} from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { deleteRecord } from  'lightning/uiRecordApi';
 
 import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestType__c';
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
@@ -54,14 +55,24 @@ export default class VacationRequest extends LightningElement {
     }
 
     removeRequest(event) {
-        remove({idRequest: event.target.value}).then(result => console.log(result));
+        deleteRecord(event.target.value).then(() => {
+            const evt = new ShowToastEvent({
+                title: 'Error',
+                message: event.target.value,
+                variant: 'success'
+            }).catch(error => {
+                const evt = new ShowToastEvent({
+                    title: 'Error',
+                    message: event.target.value,
+                    variant: 'error'
+                });
+                this.dispatchEvent(evt);
+            })
+
+            this.dispatchEvent(evt);
+        })
         this.updateList();
-        const evt = new ShowToastEvent({
-            title: 'Error',
-            message: event.target.value,
-            variant: 'error'
-        });
-        this.dispatchEvent(evt);
+
     }
     openRequestWindow() {
         if (this.contact.data) {
