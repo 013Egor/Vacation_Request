@@ -77,9 +77,15 @@ public with sharing class RequestsController {
 	@AuraEnabled(cacheable=true)
 	public static List<String> remove(String idRequest) {
 		Id testId = Id.valueOf(idRequest);
-		List<Vacation_Request__c> l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
-		delete l;
+		Vacation_Request__c[] l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
 		List<String> r = new List<String>();
+		try {
+			delete l;
+		} catch (DmlException e) {
+			r.add('Cannot remove');
+			return r;
+		}
+
 		for (Vacation_Request__c v : l) {
 			r.add(v.Name);
 		}
