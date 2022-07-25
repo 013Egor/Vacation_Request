@@ -16,13 +16,14 @@ export default class VacationRequest extends LightningElement {
     status = false;
     @wire(hasManager) contact;
 
-    @wire(getRequests, {status: false}) requests;
-
+    @wire(getRequests, {status: false}) temp;
+    @track requests;
 
 
     handleChange(event) {
         this.status = this.status ? false : true;
         console.log(this.status);
+        this.requests = this.temp.data;
     }
 
     removeRequest(event) {
