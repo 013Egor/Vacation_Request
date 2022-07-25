@@ -41,6 +41,7 @@ export default class VacationRequest extends LightningElement {
             });
             this.dispatchEvent(evt);
         });
+        this.delayTimeout = setTimeout(() => { }, 300);
         refreshApex(this.requests);
     }
 

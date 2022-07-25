@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,14 +89,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="17576000" />
-    </task>
-    <task id="LOCAL-00236" summary="added remove logic">
-      <created>1658735940741</created>
-      <option name="number" value="00236" />
-      <option name="presentableId" value="LOCAL-00236" />
-      <option name="project" value="LOCAL" />
-      <updated>1658735940742</updated>
+      <workItem from="1658727817832" duration="17997000" />
     </task>
     <task id="LOCAL-00237" summary="added remove logic">
       <created>1658736278585</created>
@@ -437,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658745857880</updated>
     </task>
-    <option name="localTasksCounter" value="285" />
+    <task id="LOCAL-00285" summary="fixed view my requests">
+      <created>1658746845955</created>
+      <option name="number" value="00285" />
+      <option name="presentableId" value="LOCAL-00285" />
+      <option name="project" value="LOCAL" />
+      <updated>1658746845956</updated>
+    </task>
+    <option name="localTasksCounter" value="286" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
