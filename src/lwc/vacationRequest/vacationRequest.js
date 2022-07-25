@@ -54,7 +54,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     removeRequest(event) {
-        remove(event.target.value);
+        remove({id: event.target.value});
         this.updateList();
         const evt = new ShowToastEvent({
             title: 'Error',
