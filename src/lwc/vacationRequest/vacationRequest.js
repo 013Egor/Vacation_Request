@@ -8,6 +8,7 @@ import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
+import setSubmitStatus from '@salesforce/apex/RequestsController.setSubmitStatus';
 import { refreshApex} from '@salesforce/apex';
 
 export default class VacationRequest extends LightningElement {
@@ -59,7 +60,8 @@ export default class VacationRequest extends LightningElement {
     }
 
     submitRequest(event) {
-
+        setSubmitStatus(event.target.value);
+        refreshApex(this.requests);
     }
 
 

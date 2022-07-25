@@ -59,7 +59,7 @@ public with sharing class RequestsController {
 		return requestList;
 	}
 
-	public static void updateStatus(Id requestId) {
+	public static void setSubmitStatus(Id requestId) {
 		List<Vacation_Request__c> l = [SELECT Id, Status__c FROM Vacation_Request__c WHERE Id =: requestId];
 		for (Vacation_Request__c request : l) {
 			request.Status__c = 'Submitted';
