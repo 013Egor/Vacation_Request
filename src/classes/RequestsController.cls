@@ -25,8 +25,6 @@ public with sharing class RequestsController {
 		public Boolean isSubmitted {get; set;}
 		@AuraEnabled
 		public Boolean isApproved {get; set;}
-		@AuraEnabled
-		public Boolean test {get; set;}
 	}
 
 	@AuraEnabled(cacheable=true)
