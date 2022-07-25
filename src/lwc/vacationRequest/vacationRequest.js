@@ -58,7 +58,7 @@ export default class VacationRequest extends LightningElement {
         this.updateList();
         const evt = new ShowToastEvent({
             title: 'Error',
-            message: 'Добавьте менеджера',
+            message: event.target.value,
             variant: 'error'
         });
         this.dispatchEvent(evt);
