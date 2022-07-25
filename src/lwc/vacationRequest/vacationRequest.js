@@ -60,7 +60,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     submitRequest(event) {
-        setSubmitStatus(event.target.value);
+        setSubmitStatus(event.target.value).then(result => {console.log(result)});
         refreshApex(this.requests);
     }
 
