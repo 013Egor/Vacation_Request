@@ -7,7 +7,7 @@
                 <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
-                        <div key={request.Id} if:true={request.myList}>
+                        <div key={request.Id} if:true={status}>
                             <div key={request.Id} if:true={request.isUser}>
                                 <p key={request.Id}>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
                                 <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
@@ -21,7 +21,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div key={request.Id} if:false={myList}>
+                        <div key={request.Id} if:false={status}>
                             <p key={request.Id}>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
                             <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
                                 <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
