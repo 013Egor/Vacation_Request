@@ -14,7 +14,7 @@ export default class VacationRequest extends LightningElement {
     modelWindow = false;
 
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
-    status = true;
+    status = false;
 
     @wire(hasManager) contact;
     @wire(getRequests, {status: '$status'}) requests;
@@ -33,6 +33,7 @@ export default class VacationRequest extends LightningElement {
                 variant: 'success'
             })
             this.dispatchEvent(evt);
+
             return refreshApex(this.requests);
         }).catch(error => {
             const evt = new ShowToastEvent({
