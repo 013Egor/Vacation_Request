@@ -26,6 +26,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     updateList() {
+        console.log(this.status);
         if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
@@ -45,6 +46,7 @@ export default class VacationRequest extends LightningElement {
 
     handleChange(event) {
         this.status = this.status ? false : true;
+
         this.updateList();
     }
 

@@ -7,16 +7,19 @@
                 <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
                 <template if:true={requests}>
                     <template for:each={requests} for:item="request">
-                        <p key={request.Id}>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
-                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
-                            <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
-                        </p>
-                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isUser}>
-                            <lightning-button label="Submit" if:true={request.isNew}></lightning-button>
-                        </p>
-                        <p key={request.Id} class="slds-m-bottom_small" if:true={request.isManager}>
-                            <lightning-button label="Approve" if:true={request.isSubmitted}></lightning-button>
-                        </p>
+                        <div key={request.Id} class="slds-m-around_medium">
+                            <p>{request.id}, {request.name}, {request.startDate}, {request.endDate}, {request.workingDays}, {request.managerName}</p>
+                            <p class="slds-m-bottom_small" if:true={request.isUser}>
+                                <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
+                            </p>
+                            <p class="slds-m-bottom_small" if:true={request.isUser}>
+                                <lightning-button label="Submit" if:true={request.isNew}></lightning-button>
+                            </p>
+                            <p class="slds-m-bottom_small" if:true={request.isManager}>
+                                <lightning-button label="Approve" if:true={request.isSubmitted}></lightning-button>
+                            </p>
+                        </div>
+
                     </template>
                 </template>
                 <template if:true={error}>
