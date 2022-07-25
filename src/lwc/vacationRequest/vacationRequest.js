@@ -8,7 +8,6 @@ import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
-import getMyRequests from '@salesforce/apex/RequestsController.getMyRequests';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
