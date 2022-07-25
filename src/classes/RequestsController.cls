@@ -76,12 +76,13 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static List<String> remove(String idRequest) {
-		List<Vacation_Request__c> l = [SELECT Id from Vacation_Request__c];
-		//delete [SELECT Id from Vacation_Request__c WHERE Id =: idRequest];
+		Id testId = Id.valueOf(idRequest);
+		List<Vacation_Request__c> l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
+//		delete [SELECT Id from Vacation_Request__c WHERE Id =: testId];
 		List<String> r = new List<String>();
 		r.add(idRequest);
 		for (Vacation_Request__c v : l) {
-			r.add(v.Id);
+			r.add(v.Name);
 		}
 
 		return r;
