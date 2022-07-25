@@ -79,10 +79,11 @@ public with sharing class RequestsController {
 		List<Vacation_Request__c> l = [SELECT Id from Vacation_Request__c];
 		delete [SELECT Id from Vacation_Request__c WHERE Id =: idRequest];
 		List<String> r = new List<String>();
+		r.add(idRequest);
 		for (Vacation_Request__c v : l) {
 			r.add(v.Id);
 		}
-		r.add('My - ' + idRequest);
+
 		return r;
 	}
 }
