@@ -16,7 +16,7 @@
                                 <lightning-button label="Submit" if:true={request.isNew} value={request.id} onclick={submitRequest}></lightning-button>
                             </p>
                             <p class="slds-m-bottom_small" if:true={request.isManager}>
-                                <lightning-button label="Approve" if:true={request.isSubmitted}></lightning-button>
+                                <lightning-button label="Approve" if:true={request.isSubmitted} value={request.id} onclick={approveRequest}></lightning-button>
                             </p>
                         </div>
 

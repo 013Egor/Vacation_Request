@@ -61,6 +61,28 @@ export default class VacationRequest extends LightningElement {
         }
     }
 
+    approveRequest(event) {
+        const fields = {};
+        fields[VACATION_ID.fieldApiName] = event.target.value;
+        fields[STATUS_FIELD.fieldApiName] = 'Approved';
+        const recordInput = { fields };
+        updateRecord(recordInput)
+            .then(() => {
+                this.dispatchEvent(
+                    new ShowToastEvent({
+                        title: 'Success',
+                        message: 'Request is submitted',
+                        variant: 'success'
+                    })
+                );
+
+                return refreshApex(this.requests);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+
     submitRequest(event) {
         const fields = {};
         fields[VACATION_ID.fieldApiName] = event.target.value;
@@ -71,7 +93,7 @@ export default class VacationRequest extends LightningElement {
                 this.dispatchEvent(
                     new ShowToastEvent({
                         title: 'Success',
-                        message: 'Case Updated',
+                        message: 'Request is submitted',
                         variant: 'success'
                     })
                 );
