@@ -25,9 +25,11 @@ public with sharing class RequestsController {
 		public Boolean isSubmitted {get; set;}
 		@AuraEnabled
 		public Boolean isApproved {get; set;}
+		@AuraEnabled
+		public Boolean test {get; set;}
 	}
 
-	@AuraEnabled(cacheable=false)
+	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getRequests(Boolean status) {
 		List<Vacation_Request__c> l;
 		if (status) {
@@ -52,6 +54,7 @@ public with sharing class RequestsController {
 			temp.isNew = v.Status__c == 'New';
 			temp.isSubmitted = v.Status__c == 'Submitted';
 			temp.isApproved = v.Status__c == 'Approved';
+			temp.test = status;
 
 			requestList.add(temp);
 		}
