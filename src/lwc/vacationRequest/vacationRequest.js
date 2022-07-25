@@ -8,12 +8,14 @@ import END_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.EndDate__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
+import getMyRequests from '@salesforce/apex/RequestsController.getMyRequests';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
 
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
     status = false;
+
     @wire(hasManager) contact;
 
     @track requests;
@@ -27,7 +29,17 @@ export default class VacationRequest extends LightningElement {
 
     handleChange(event) {
         this.status = this.status ? false : true;
-
+        if (this.myList == true) {
+            getMyRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        } else {
+            getRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        }
     }
 
     removeRequest(event) {
@@ -62,10 +74,17 @@ export default class VacationRequest extends LightningElement {
     }
 
     closeRequestWindow() {
-        getRequests().then(result => {
-            this.requests = result;
-            console.log(this.requests);
-        });
+        if (this.myList == true) {
+            getMyRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        } else {
+            getRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        }
 
         this.modelWindow = false;
     }
@@ -86,9 +105,17 @@ export default class VacationRequest extends LightningElement {
             variant: 'Success'
         });
 
-        getRequests().then(result => {
-            this.requests = result;
-        })
+        if (this.myList == true) {
+            getMyRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        } else {
+            getRequests().then(result => {
+                this.requests = result;
+                console.log(this.requests);
+            });
+        }
 
         this.dispatchEvent(evt);
     }

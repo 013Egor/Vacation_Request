@@ -56,5 +56,30 @@ public with sharing class RequestsController {
 		return requestList;
 	}
 
+	@AuraEnabled(cacheable=true)
+	public static List<RequestWrapper> getMyRequests() {
+		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE Id =: UserInfo.getUserId()];
 
+		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
+
+		for (Vacation_Request__c v : l) {
+			RequestWrapper temp = new RequestWrapper();
+			temp.name = [SELECT Id, Name from User WHERE Id =: v.CreatedById].Name;
+			temp.managerName = [SELECT Id, Name from User WHERE Id =: v.Manager__c].Name;
+			temp.id = v.Id;
+			temp.startDate = v.StartDate__c;
+			temp.endDate = v.EndDate__c;
+			temp.workingDays = v.WorkingDays__c;
+			temp.userId = v.Id;
+			temp.isManager = v.Manager__c == UserInfo.getUserId();
+			temp.isUser = v.CreatedById == UserInfo.getUserId();
+			temp.isNew = v.Status__c == 'New';
+			temp.isSubmitted = v.Status__c == 'Submitted';
+			temp.isApproved = v.Status__c == 'Approved';
+
+			requestList.add(temp);
+		}
+
+		return requestList;
+	}
 }
