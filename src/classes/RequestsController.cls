@@ -75,7 +75,7 @@ public with sharing class RequestsController {
 	}
 
 	@AuraEnabled(cacheable=true)
-	public static List<Vacation_Request__c> remove(Id idRequest) {
+	public static List<Vacation_Request__c> remove(String idRequest) {
 		List<Vacation_Request__c> l = [SELECT Id from Vacation_Request__c WHERE Id =: idRequest];
 		delete [SELECT Id from Vacation_Request__c WHERE Id =: idRequest];
 
