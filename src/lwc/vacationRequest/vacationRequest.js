@@ -60,6 +60,12 @@ export default class VacationRequest extends LightningElement {
     }
 
     submitRequest(event) {
+        const evt = new ShowToastEvent({
+            title: 'Error',
+            message: event.target.value,
+            variant: 'error'
+        });
+        this.dispatchEvent(evt);
         setSubmitStatus(event.target.value).then(result => {console.log(result)});
         refreshApex(this.requests);
     }
