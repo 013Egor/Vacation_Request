@@ -19,7 +19,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
     connectedCallback() {
-        getRequests(this.status).then(result => {
+        getRequests({status: this.status}).then(result => {
             this.requests = result;
             console.log(this.requests);
         }).catch(error => {
@@ -29,7 +29,7 @@ export default class VacationRequest extends LightningElement {
 
     handleChange(event) {
         this.status = this.status ? false : true;
-        this.requests = getRequests(this.status).then(result => {
+        getRequests({status: this.status}).then(result => {
             this.requests = result;
             console.log(this.requests);
         }).catch(error => {
