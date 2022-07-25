@@ -79,12 +79,12 @@ public with sharing class RequestsController {
 		Id testId = Id.valueOf(idRequest);
 		Vacation_Request__c[] l = [SELECT Id, Name from Vacation_Request__c  WHERE Id =: testId];
 		List<String> r = new List<String>();
-//		try {
-//			delete l;
-//		} catch (DmlException e) {
-//			r.add('Cannot remove');
-//			return r;
-//		}
+		try {
+			delete l;
+		} catch (DmlException e) {
+			r.add('Cannot remove');
+			return r;
+		}
 
 		for (Vacation_Request__c v : l) {
 			r.add(v.Name);
