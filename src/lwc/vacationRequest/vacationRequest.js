@@ -19,7 +19,7 @@ export default class VacationRequest extends LightningElement {
     @track requests;
 
     connectedCallback() {
-        getRequests({status: this.status}).then(result => {
+        getRequests().then(result => {
             this.requests = result;
             console.log(this.requests);
         });
@@ -27,6 +27,7 @@ export default class VacationRequest extends LightningElement {
 
     handleChange(event) {
         this.status = this.status ? false : true;
+
     }
 
     removeRequest(event) {
@@ -46,6 +47,7 @@ export default class VacationRequest extends LightningElement {
             this.dispatchEvent(evt);
         });
     }
+
     openRequestWindow() {
         if (this.contact.data) {
             this.modelWindow = true;
@@ -63,12 +65,8 @@ export default class VacationRequest extends LightningElement {
         getRequests().then(result => {
             this.requests = result;
             console.log(this.requests);
-        }).catch(error => {
-            this.error = error;
         });
-        getRequests({status: this.status}).then(result => {
-            this.requests = result;
-        })
+
         this.modelWindow = false;
     }
 
@@ -87,10 +85,11 @@ export default class VacationRequest extends LightningElement {
             message: 'Request is sent',
             variant: 'Success'
         });
-        getRequests({status: this.status}).then(result => {
+
+        getRequests().then(result => {
             this.requests = result;
         })
-        this.dispatchEvent(evt);
 
+        this.dispatchEvent(evt);
     }
 }

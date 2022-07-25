@@ -30,7 +30,7 @@ public with sharing class RequestsController {
 	}
 
 	@AuraEnabled(cacheable=true)
-	public static List<RequestWrapper> getRequests(Boolean status) {
+	public static List<RequestWrapper> getRequests() {
 		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
 
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
@@ -55,4 +55,6 @@ public with sharing class RequestsController {
 
 		return requestList;
 	}
+
+
 }

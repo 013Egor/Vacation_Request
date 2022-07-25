@@ -4,7 +4,6 @@
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,35 +78,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="13127000" />
-    </task>
-    <task id="LOCAL-00218" summary="added remove logic">
-      <created>1658731575733</created>
-      <option name="number" value="00218" />
-      <option name="presentableId" value="LOCAL-00218" />
-      <option name="project" value="LOCAL" />
-      <updated>1658731575733</updated>
-    </task>
-    <task id="LOCAL-00219" summary="added remove logic">
-      <created>1658731727343</created>
-      <option name="number" value="00219" />
-      <option name="presentableId" value="LOCAL-00219" />
-      <option name="project" value="LOCAL" />
-      <updated>1658731727343</updated>
-    </task>
-    <task id="LOCAL-00220" summary="added remove logic">
-      <created>1658732054106</created>
-      <option name="number" value="00220" />
-      <option name="presentableId" value="LOCAL-00220" />
-      <option name="project" value="LOCAL" />
-      <updated>1658732054107</updated>
-    </task>
-    <task id="LOCAL-00221" summary="added remove logic">
-      <created>1658732531525</created>
-      <option name="number" value="00221" />
-      <option name="presentableId" value="LOCAL-00221" />
-      <option name="project" value="LOCAL" />
-      <updated>1658732531525</updated>
+      <workItem from="1658727817832" duration="13767000" />
     </task>
     <task id="LOCAL-00222" summary="added remove logic">
       <created>1658733150928</created>
@@ -424,7 +395,35 @@
       <option name="project" value="LOCAL" />
       <updated>1658741849542</updated>
     </task>
-    <option name="localTasksCounter" value="267" />
+    <task id="LOCAL-00267" summary="fixed view my requests">
+      <created>1658742275318</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1658742275318</updated>
+    </task>
+    <task id="LOCAL-00268" summary="fixed view my requests">
+      <created>1658742392221</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1658742392221</updated>
+    </task>
+    <task id="LOCAL-00269" summary="fixed view my requests">
+      <created>1658742524605</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1658742524605</updated>
+    </task>
+    <task id="LOCAL-00270" summary="fixed view my requests">
+      <created>1658742554304</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1658742554304</updated>
+    </task>
+    <option name="localTasksCounter" value="271" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
