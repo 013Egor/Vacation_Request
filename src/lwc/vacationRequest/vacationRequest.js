@@ -66,6 +66,7 @@ export default class VacationRequest extends LightningElement {
             });
             this.dispatchEvent(evt);
         });
+        this.updateList();
     }
 
     openRequestWindow() {
