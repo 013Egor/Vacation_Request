@@ -13,12 +13,12 @@ export default class VacationRequest extends LightningElement {
     modelWindow = false;
 
     fields = [REQUEST_TYPE_FIELD, START_DATE_FIELD, END_DATE_FIELD];
-
+    myList = false;
     @wire(hasManager) contact;
 
     @wire(getRequests, {status: this.myList}) requests;
 
-    myList = false;
+
 
     handleChange(event) {
         this.myList = this.myList ? false : true;
