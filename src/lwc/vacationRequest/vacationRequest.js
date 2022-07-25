@@ -19,6 +19,7 @@ export default class VacationRequest extends LightningElement {
     @wire(hasManager) contact;
 
     @track requests;
+    @track error;
 
     connectedCallback() {
         getRequests().then(result => {
@@ -31,12 +32,16 @@ export default class VacationRequest extends LightningElement {
         if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
-                console.log(result);
+                console.log(this.requests);
+            }).catch(error => {
+                this.error = error;
             });
         } else {
             getRequests().then(result => {
                 this.requests = result;
-                console.log(result);
+                console.log(this.requests);
+            }).catch(error => {
+                this.error = error;
             });
         }
     }

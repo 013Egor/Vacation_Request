@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
-    </list>
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,21 +74,7 @@
       <workItem from="1658643074379" duration="5543000" />
       <workItem from="1658666059691" duration="4732000" />
       <workItem from="1658672701951" duration="17290000" />
-      <workItem from="1658727817832" duration="14785000" />
-    </task>
-    <task id="LOCAL-00228" summary="added remove logic">
-      <created>1658734369248</created>
-      <option name="number" value="00228" />
-      <option name="presentableId" value="LOCAL-00228" />
-      <option name="project" value="LOCAL" />
-      <updated>1658734369248</updated>
-    </task>
-    <task id="LOCAL-00229" summary="added remove logic">
-      <created>1658734670895</created>
-      <option name="number" value="00229" />
-      <option name="presentableId" value="LOCAL-00229" />
-      <option name="project" value="LOCAL" />
-      <updated>1658734670896</updated>
+      <workItem from="1658727817832" duration="15297000" />
     </task>
     <task id="LOCAL-00230" summary="added remove logic">
       <created>1658734716451</created>
@@ -422,7 +405,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658743637392</updated>
     </task>
-    <option name="localTasksCounter" value="277" />
+    <task id="LOCAL-00277" summary="fixed view my requests">
+      <created>1658743932747</created>
+      <option name="number" value="00277" />
+      <option name="presentableId" value="LOCAL-00277" />
+      <option name="project" value="LOCAL" />
+      <updated>1658743932747</updated>
+    </task>
+    <task id="LOCAL-00278" summary="fixed view my requests">
+      <created>1658744101214</created>
+      <option name="number" value="00278" />
+      <option name="presentableId" value="LOCAL-00278" />
+      <option name="project" value="LOCAL" />
+      <updated>1658744101215</updated>
+    </task>
+    <option name="localTasksCounter" value="279" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,11 +431,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="8516da10-6441-4d70-b451-5ecec7e7d3a5">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/home/egor/IdeaProjects/vacationRequest2/src/lwc/vacationRequest" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="8516da10-6441-4d70-b451-5ecec7e7d3a5" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
