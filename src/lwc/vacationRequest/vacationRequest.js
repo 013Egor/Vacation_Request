@@ -29,7 +29,7 @@ export default class VacationRequest extends LightningElement {
 
     handleChange(event) {
         this.status = this.status ? false : true;
-        if (this.myList == true) {
+        if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
                 console.log(this.requests);
@@ -74,7 +74,7 @@ export default class VacationRequest extends LightningElement {
     }
 
     closeRequestWindow() {
-        if (this.myList == true) {
+        if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
                 console.log(this.requests);
@@ -105,7 +105,7 @@ export default class VacationRequest extends LightningElement {
             variant: 'Success'
         });
 
-        if (this.myList == true) {
+        if (this.status == true) {
             getMyRequests().then(result => {
                 this.requests = result;
                 console.log(this.requests);
