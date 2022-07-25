@@ -16,25 +16,11 @@ export default class VacationRequest extends LightningElement {
     status = false;
     @wire(hasManager) contact;
 
-    @wire requests;
-    @track error;
-    connectedCallback() {
-        getRequests({status: this.status}).then(result => {
-            this.requests = result;
-            console.log(this.requests);
-        }).catch(error => {
-            this.error = error;
-        });
-    }
+    @wire(getRequests, {status: '$status'}) requests;
+
 
     handleChange(event) {
         this.status = this.status ? false : true;
-        getRequests({status: this.status}).then(result => {
-            this.requests = result;
-            console.log(this.requests);
-        }).catch(error => {
-            this.error = error;
-        });
         console.log(this.status);
     }
 
