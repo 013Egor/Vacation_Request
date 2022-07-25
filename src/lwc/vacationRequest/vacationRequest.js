@@ -20,7 +20,7 @@ export default class VacationRequest extends LightningElement {
     @wire(getRequests, {status: '$status'})
     wiredContacts({ error, data }) {
         if (data) {
-            this.requests = data.data;
+            this.requests = data;
             this.error = undefined;
         } else if (error) {
             this.error = error;
