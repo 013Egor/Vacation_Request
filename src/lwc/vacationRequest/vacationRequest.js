@@ -17,7 +17,7 @@ export default class VacationRequest extends LightningElement {
     @wire(hasManager) contact;
 
     @track requests;
-
+    @track error;
     connectedCallback() {
         this.requests = getRequests(this.status).then(result => {
             this.requests = result;
