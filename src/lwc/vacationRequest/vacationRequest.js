@@ -21,9 +21,9 @@ export default class VacationRequest extends LightningElement {
     @track requests;
     @track error;
 
-    connectedCallback() {
-        this.updateList();
-    }
+    // connectedCallback() {
+    //     this.updateList();
+    // }
 
     updateList() {
         if (this.status == true) {
