@@ -58,7 +58,7 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getMyRequests() {
-		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE Id =: UserInfo.getUserId()];
+		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE CreatedById =: UserInfo.getUserId()];
 
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 
