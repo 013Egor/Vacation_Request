@@ -66,9 +66,8 @@ public with sharing class RequestsController {
 
 		for (Vacation_Request__c request : l) {
 			request.Status__c = values[2].getValue();
+			update request;
 		}
-
-		update l;
 	}
 
 }
