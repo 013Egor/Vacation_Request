@@ -31,12 +31,7 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getRequests(Boolean status) {
-		List<Vacation_Request__c> l;
-		if (status) {
-			l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE CreatedById =: UserInfo.getUserId()];
-		} else {
-			l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
-		}
+		List<Vacation_Request__c> l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
 
 		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
 
@@ -54,7 +49,6 @@ public with sharing class RequestsController {
 			temp.isNew = v.Status__c == 'New';
 			temp.isSubmitted = v.Status__c == 'Submitted';
 			temp.isApproved = v.Status__c == 'Approved';
-			temp.test = status;
 
 			requestList.add(temp);
 		}
