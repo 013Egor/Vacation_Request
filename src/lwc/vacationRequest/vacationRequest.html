@@ -2,11 +2,11 @@
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
             <div class="slds-m-around_medium">
                 <div class="slds-grid slds-gutters">
-                    <div class="slds-col">
-                        <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+                    <div class="slds-col" >
+                        <lightning-input class="slds-align_absolute-center" type="checkbox" label="View only my" onchange={handleChange}></lightning-input>
                     </div>
                     <div class="slds-col">
-                        <p class="slds-m-bottom_small">
+                        <p class="slds-m-bottom_small slds-align_absolute-center">
                             <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
                         </p>
                     </div>

@@ -125,14 +125,7 @@
       <workItem from="1658672701951" duration="17290000" />
       <workItem from="1658727817832" duration="22415000" />
       <workItem from="1658767081041" duration="585000" />
-      <workItem from="1658813294157" duration="9205000" />
-    </task>
-    <task id="LOCAL-00265" summary="fixed view my requests">
-      <created>1658741505615</created>
-      <option name="number" value="00265" />
-      <option name="presentableId" value="LOCAL-00265" />
-      <option name="project" value="LOCAL" />
-      <updated>1658741505615</updated>
+      <workItem from="1658813294157" duration="9527000" />
     </task>
     <task id="LOCAL-00266" summary="fixed view my requests">
       <created>1658741849542</created>
@@ -470,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658821991064</updated>
     </task>
-    <option name="localTasksCounter" value="314" />
+    <task id="LOCAL-00314" summary="fix html page">
+      <created>1658822607025</created>
+      <option name="number" value="00314" />
+      <option name="presentableId" value="LOCAL-00314" />
+      <option name="project" value="LOCAL" />
+      <updated>1658822607026</updated>
+    </task>
+    <option name="localTasksCounter" value="315" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +551,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Deploy with ApexVCS" />
     <MESSAGE value="added trigger to set manager to request" />
     <MESSAGE value="remove test class" />
     <MESSAGE value="added trigger to VacationRequest__c to set manager" />
@@ -576,7 +575,8 @@
     <MESSAGE value="added submit function" />
     <MESSAGE value="added test to Apex code" />
     <MESSAGE value="added test to Apex code and refactored code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test to Apex code and refactored code" />
+    <MESSAGE value="fix html page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix html page" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
