@@ -5,18 +5,18 @@ public class RequestControllerTest {
 	static void validateGetRequests() {
 
 		User manager;
-		User user;
-		User[] all = [SELECT Id, Name, ManagerId FROM User];
+		User user = [SELECT Id, Name, ManagerId FROM User WHERE ManagerId != null][0];
+		manager = [SELECT Id, Name, ManagerId From User WHERE Id =: user.Id];
 
-		for (User userTemp : all) {
-			for (User managerTemp : all) {
-				if (userTemp.ManagerId == managerTemp.Id) {
-					user = userTemp;
-					manager = managerTemp;
-					break;
-				}
-			}
-		}
+//		for (User userTemp : all) {
+//			for (User managerTemp : all) {
+//				if (userTemp.ManagerId == managerTemp.Id) {
+//					user = userTemp;
+//					manager = managerTemp;
+//					break;
+//				}
+//			}
+//		}
 
 		System.runAs(manager) {
 			Vacation_Request__c r = new Vacation_Request__c();
