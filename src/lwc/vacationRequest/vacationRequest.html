@@ -22,7 +22,7 @@
                                                 <p>{request.name}, {request.startDate} - {request.endDate} ({request.workingDays}) - {request.managerName}</p>
                                             </div>
                                             <div class="slds-col">
-                                                <div class="slds-grid slds-gutters">
+                                                <div class="slds-grid slds-gutters slds-float_right">
                                                     <div class="slds-col" if:true={request.isUser}>
                                                         <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
                                                     </div>
