@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ApexVcsIndex">
     <index-record>
-      <option name="path" value="/src/lwc/vacationRequest/style.css" />
-      <option name="type" value="NEW" />
-    </index-record>
-    <index-record>
       <option name="path" value="/src/classes/ManagerControllerTest.cls" />
       <option name="type" value="NEW" />
     </index-record>
