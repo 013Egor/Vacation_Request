@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/classes/RequestControllerTest.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestControllerTest.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/RequestsController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/RequestsController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Apex Test.RequestControllerTest.validateGetRequests">
+  <component name="RunManager" selected="Apex Test.requestTriggerTest.validateRequestTrigger">
     <configuration name="DateControllerTest.validateGetWorkingDays" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
       <option name="methodName" value="validateGetWorkingDays" />
       <option name="testFilePath" value="$PROJECT_DIR$/src/classes/DateControllerTest.cls" />
@@ -90,8 +94,17 @@
         <option name="SFDeployBeforeRunTaskProvider" enabled="true" />
       </method>
     </configuration>
+    <configuration name="requestTriggerTest.validateRequestTrigger" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
+      <option name="methodName" value="validateRequestTrigger" />
+      <option name="testFilePath" value="$PROJECT_DIR$/src/classes/requestTriggerTest.cls" />
+      <option name="testKind" value="Method" />
+      <method v="2">
+        <option name="SFDeployBeforeRunTaskProvider" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Apex Test.requestTriggerTest.validateRequestTrigger" />
         <item itemvalue="Apex Test.RequestControllerTest.validateGetRequests" />
         <item itemvalue="Apex Test.RequestControllerTest" />
         <item itemvalue="Apex Test.ManagerControllerTest.validateHasManager" />
@@ -116,21 +129,7 @@
       <workItem from="1658672701951" duration="17290000" />
       <workItem from="1658727817832" duration="22415000" />
       <workItem from="1658767081041" duration="585000" />
-      <workItem from="1658813294157" duration="7202000" />
-    </task>
-    <task id="LOCAL-00261" summary="added remove logic">
-      <created>1658741027576</created>
-      <option name="number" value="00261" />
-      <option name="presentableId" value="LOCAL-00261" />
-      <option name="project" value="LOCAL" />
-      <updated>1658741027576</updated>
-    </task>
-    <task id="LOCAL-00262" summary="added remove logic">
-      <created>1658741219565</created>
-      <option name="number" value="00262" />
-      <option name="presentableId" value="LOCAL-00262" />
-      <option name="project" value="LOCAL" />
-      <updated>1658741219565</updated>
+      <workItem from="1658813294157" duration="8620000" />
     </task>
     <task id="LOCAL-00263" summary="fixed view my requests">
       <created>1658741274824</created>
@@ -461,7 +460,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658820357504</updated>
     </task>
-    <option name="localTasksCounter" value="310" />
+    <task id="LOCAL-00310" summary="added test to Apex code">
+      <created>1658820525229</created>
+      <option name="number" value="00310" />
+      <option name="presentableId" value="LOCAL-00310" />
+      <option name="project" value="LOCAL" />
+      <updated>1658820525233</updated>
+    </task>
+    <task id="LOCAL-00311" summary="added test to Apex code">
+      <created>1658820589454</created>
+      <option name="number" value="00311" />
+      <option name="presentableId" value="LOCAL-00311" />
+      <option name="project" value="LOCAL" />
+      <updated>1658820589455</updated>
+    </task>
+    <option name="localTasksCounter" value="312" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

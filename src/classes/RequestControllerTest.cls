@@ -4,36 +4,25 @@ public class RequestControllerTest {
 	@IsTest
 	static void validateGetRequests() {
 
-		User manager;
 		User user = [SELECT Id, Name, ManagerId FROM User WHERE ManagerId != null][0];
-		manager = [SELECT Id, Name, ManagerId From User WHERE Id =: user.Id];
-
-//		for (User userTemp : all) {
-//			for (User managerTemp : all) {
-//				if (userTemp.ManagerId == managerTemp.Id) {
-//					user = userTemp;
-//					manager = managerTemp;
-//					break;
-//				}
-//			}
-//		}
+		User manager = [SELECT Id, Name, ManagerId From User WHERE Id =: user.Id];
 
 		System.runAs(manager) {
-			Vacation_Request__c r = new Vacation_Request__c();
-			r.Status__c = 'New';
-			r.EndDate__c = Date.newInstance(2022, 8, 23);
-			r.StartDate__c  = Date.newInstance(2022, 8, 2);
-			r.RequestType__c = 'Sick';
+			Vacation_Request__c request = new Vacation_Request__c();
+			request.Status__c = 'New';
+			request.EndDate__c = Date.newInstance(2022, 8, 23);
+			request.StartDate__c  = Date.newInstance(2022, 8, 2);
+			request.RequestType__c = 'Sick';
 
-			insert r;
+			insert request;
 		}
 
 		System.runAs(user) {
 
 			for (Integer i = 0 ; i < 3; i++) {
 				Vacation_Request__c request = new Vacation_Request__c(
-						Status__c = 'New', EndDate__c = Date.newInstance(2022, 8, 23),
-						StartDate__c  = Date.newInstance(2022, 8, 2),
+						Status__c = 'New', EndDate__c = Date.today().addDays(10),
+						StartDate__c  = Date.today(),
 						RequestType__c = 'Sick'
 				);
 
@@ -55,7 +44,7 @@ public class RequestControllerTest {
 					}
 				}
 
-				System.assertEquals(false, allWithSameUser);
+				System.assertEquals(true, allWithSameUser);
 			}
 		}
 	}

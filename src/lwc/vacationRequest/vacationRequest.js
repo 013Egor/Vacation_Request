@@ -1,7 +1,8 @@
-import {LightningElement, wire, track} from 'lwc';
+import {LightningElement, wire } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import { deleteRecord } from  'lightning/uiRecordApi';
 import { updateRecord } from  'lightning/uiRecordApi';
+import { refreshApex} from '@salesforce/apex';
 
 import  REQUEST_TYPE_FIELD from '@salesforce/schema/Vacation_Request__c.RequestType__c';
 import START_DATE_FIELD from '@salesforce/schema/Vacation_Request__c.StartDate__c';
@@ -11,7 +12,6 @@ import STATUS_FIELD from '@salesforce/schema/Vacation_Request__c.Status__c';
 
 import hasManager from '@salesforce/apex/ManagerController.hasManager';
 import getRequests from '@salesforce/apex/RequestsController.getRequests';
-import { refreshApex} from '@salesforce/apex';
 
 export default class VacationRequest extends LightningElement {
     modelWindow = false;
@@ -21,43 +21,48 @@ export default class VacationRequest extends LightningElement {
 
     @wire(hasManager) contact;
     @wire(getRequests, {status: '$status'}) requests;
-    @track error;
 
     handleChange(event) {
         this.status = this.status ? false : true;
         refreshApex(this.requests);
     }
 
-    removeRequest(event) {
-        deleteRecord(event.target.value).then(() => {
-            const evt = new ShowToastEvent({
-                title: 'Ok',
-                message: event.target.value,
-                variant: 'success'
-            })
-            this.dispatchEvent(evt);
+    showSuccessToast(title, message) {
+        const evt = new ShowToastEvent({
+            title: title,
+            message: message,
+            variant: 'success'
+        })
+        this.dispatchEvent(evt);
+    }
 
+    showErrorToast(title, message) {
+        const evt = new ShowToastEvent({
+            title: title,
+            message: message,
+            variant: 'error'
+        })
+        this.dispatchEvent(evt);
+    }
+
+    removeRequest(event) {
+
+        deleteRecord(event.target.value).then(() => {
+
+            this.showSuccessToast('Success', event.target.value);
             return refreshApex(this.requests);
         }).catch(error => {
-            const evt = new ShowToastEvent({
-                title: 'Error',
-                message: event.target.value,
-                variant: 'error'
-            });
-            this.dispatchEvent(evt);
+
+            this.showErrorToast('Error', event.target.value);
         });
     }
 
     openRequestWindow() {
+
         if (this.contact.data) {
             this.modelWindow = true;
         } else {
-            const evt = new ShowToastEvent({
-                title: 'Error',
-                message: 'Добавьте менеджера',
-                variant: 'error'
-            });
-            this.dispatchEvent(evt);
+            this.showErrorToast('Error', 'Add manager');
         }
     }
 
@@ -66,21 +71,14 @@ export default class VacationRequest extends LightningElement {
         fields[VACATION_ID.fieldApiName] = event.target.value;
         fields[STATUS_FIELD.fieldApiName] = 'Approved';
         const recordInput = { fields };
-        updateRecord(recordInput)
-            .then(() => {
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Success',
-                        message: 'Request is submitted',
-                        variant: 'success'
-                    })
-                );
+        updateRecord(recordInput).then(() => {
 
-                return refreshApex(this.requests);
-            })
-            .catch(error => {
-                console.log(error);
-            });
+            this.showSuccessToast('Success', 'Request is approved');
+            return refreshApex(this.requests);
+        }).catch(error => {
+
+            console.log(error);
+        });
     }
 
     submitRequest(event) {
@@ -88,49 +86,30 @@ export default class VacationRequest extends LightningElement {
         fields[VACATION_ID.fieldApiName] = event.target.value;
         fields[STATUS_FIELD.fieldApiName] = 'Submitted';
         const recordInput = { fields };
-        updateRecord(recordInput)
-            .then(() => {
-                this.dispatchEvent(
-                    new ShowToastEvent({
-                        title: 'Success',
-                        message: 'Request is submitted',
-                        variant: 'success'
-                    })
-                );
+        updateRecord(recordInput).then(() => {
 
-                return refreshApex(this.requests);
-            })
-            .catch(error => {
-                console.log(error);
-            });
+            this.showSuccessToast('Success', 'Request is submitted');
+            return refreshApex(this.requests);
+        }).catch(error => {
 
+            console.log(error);
+        });
     }
 
-
     closeRequestWindow() {
-        refreshApex(this.requests);
 
+        refreshApex(this.requests);
         this.modelWindow = false;
     }
 
     showErrorMessage(event) {
-        const evt = new ShowToastEvent({
-            title: 'Error',
-            message: event.detail.message,
-            variant: 'error'
-        });
-        this.dispatchEvent(evt);
+
+        this.showErrorToast('Error', event.detail.message);
     }
 
-    handleSuccess(event) {
-        const evt = new ShowToastEvent({
-            title: 'Success',
-            message: 'Request is sent',
-            variant: 'Success'
-        });
+    handleSuccess() {
 
+        this.showSuccessToast('Success', 'Request is sent')
         refreshApex(this.requests);
-
-        this.dispatchEvent(evt);
     }
 }

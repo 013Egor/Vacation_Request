@@ -29,16 +29,16 @@ public with sharing class RequestsController {
 
 	@AuraEnabled(cacheable=true)
 	public static List<RequestWrapper> getRequests(Boolean status) {
-		List<Vacation_Request__c> l;
+		List<Vacation_Request__c> requestList;
 		if (status) {
-			l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE CreatedById =: UserInfo.getUserId()];
+			requestList = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c WHERE CreatedById =: UserInfo.getUserId()];
 		} else {
-			l = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
+			requestList = [SELECT Id, Name, CreatedById, StartDate__c, EndDate__c, WorkingDays__c, Manager__c, Status__c from Vacation_Request__c];
 		}
 
-		List<RequestWrapper> requestList = new List<RequestsController.RequestWrapper>();
+		List<RequestWrapper> result = new List<RequestsController.RequestWrapper>();
 
-		for (Vacation_Request__c v : l) {
+		for (Vacation_Request__c v : requestList) {
 			RequestWrapper temp = new RequestWrapper();
 			User[] tempUser = [SELECT Id, Name from User WHERE Id =: v.CreatedById];
 			if (tempUser.size() > 0) {
@@ -60,10 +60,10 @@ public with sharing class RequestsController {
 			temp.isSubmitted = v.Status__c == 'Submitted';
 			temp.isApproved = v.Status__c == 'Approved';
 
-			requestList.add(temp);
+			result.add(temp);
 		}
 
-		return requestList;
+		return result;
 	}
 
 }
