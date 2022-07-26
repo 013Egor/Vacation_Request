@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
+    <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="added css file">
+      <change beforePath="$PROJECT_DIR$/.idea/apex-vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/apex-vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +21,7 @@
         <option value="LightningWebComponent.js-meta" />
         <option value="ApexClass" />
         <option value="ApexClass.cls-meta" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,16 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;UseStandardLocationKey&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "UseStandardLocationKey": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Apex Test.requestTriggerTest.validateRequestTrigger">
     <configuration name="DateControllerTest.validateGetWorkingDays" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
       <option name="methodName" value="validateGetWorkingDays" />
@@ -125,21 +129,7 @@
       <workItem from="1658672701951" duration="17290000" />
       <workItem from="1658727817832" duration="22415000" />
       <workItem from="1658767081041" duration="585000" />
-      <workItem from="1658813294157" duration="10590000" />
-    </task>
-    <task id="LOCAL-00268" summary="fixed view my requests">
-      <created>1658742392221</created>
-      <option name="number" value="00268" />
-      <option name="presentableId" value="LOCAL-00268" />
-      <option name="project" value="LOCAL" />
-      <updated>1658742392221</updated>
-    </task>
-    <task id="LOCAL-00269" summary="fixed view my requests">
-      <created>1658742524605</created>
-      <option name="number" value="00269" />
-      <option name="presentableId" value="LOCAL-00269" />
-      <option name="project" value="LOCAL" />
-      <updated>1658742524605</updated>
+      <workItem from="1658813294157" duration="11488000" />
     </task>
     <task id="LOCAL-00270" summary="fixed view my requests">
       <created>1658742554304</created>
@@ -470,7 +460,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658823782371</updated>
     </task>
-    <option name="localTasksCounter" value="317" />
+    <task id="LOCAL-00317" summary="fix html page">
+      <created>1658823995684</created>
+      <option name="number" value="00317" />
+      <option name="presentableId" value="LOCAL-00317" />
+      <option name="project" value="LOCAL" />
+      <updated>1658823995684</updated>
+    </task>
+    <task id="LOCAL-00318" summary="fix html page">
+      <created>1658824140444</created>
+      <option name="number" value="00318" />
+      <option name="presentableId" value="LOCAL-00318" />
+      <option name="project" value="LOCAL" />
+      <updated>1658824140444</updated>
+    </task>
+    <option name="localTasksCounter" value="319" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -551,7 +555,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added trigger to set manager to request" />
     <MESSAGE value="remove test class" />
     <MESSAGE value="added trigger to VacationRequest__c to set manager" />
     <MESSAGE value="a" />
@@ -576,7 +579,8 @@
     <MESSAGE value="added test to Apex code" />
     <MESSAGE value="added test to Apex code and refactored code" />
     <MESSAGE value="fix html page" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix html page" />
+    <MESSAGE value="added css file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added css file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/vacationRequest2$DateControllerTest_validateGetWorkingDays.atd" NAME="DateControllerTest.validateGetWorkingDays Coverage Results" MODIFIED="1658647063334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="apex.coverage.runner.id" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
