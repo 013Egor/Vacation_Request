@@ -55,7 +55,7 @@ public class RequestControllerTest {
 					}
 				}
 
-				System.assertEquals(false, allWithSameUser);
+				System.assertEquals(true, allWithSameUser);
 			}
 		}
 	}
