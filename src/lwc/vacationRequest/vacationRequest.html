@@ -1,10 +1,17 @@
 <template>
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
             <div class="slds-m-around_medium">
-                <p class="slds-m-bottom_small">
-                    <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
-                </p>
-                <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+                    </div>
+                    <div class="slds-col">
+                        <p class="slds-m-bottom_small">
+                            <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
+                        </p>
+                    </div>
+                </div>
+
                 <template if:true={requests.data}>
                     <template for:each={requests.data} for:item="request">
                         <div key={request.Id} class="slds-m-around_medium">
