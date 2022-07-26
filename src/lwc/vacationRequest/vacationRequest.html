@@ -7,7 +7,7 @@
                             <lightning-input class="slds-align_absolute-center" type="checkbox" label="View only my" onchange={handleChange}></lightning-input>
                         </div>
                         <div class="slds-size_2-of-3">
-                            <button class="slds-button slds-button_brand slds-align_absolute-center slds-text-heading_medium" onclick={openRequestWindow}>New Request</button>
+                            <button class="slds-button slds-button_brand slds-float_right slds-text-heading_medium" onclick={openRequestWindow}>New Request</button>
                         </div>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                                 <div key={request.Id} class="slds-card">
                                     <div class="slds-p-around_medium slds-box">
                                         <div class="slds-grid slds-gutters">
-                                            <div class="slds-col slds-align_absolute-center slds-float_left">
+                                            <div class="slds-col slds-text-align_center">
                                                 <p>{request.name}, {request.startDate} - {request.endDate} ({request.workingDays}) - {request.managerName}</p>
                                             </div>
                                             <div class="slds-col">
