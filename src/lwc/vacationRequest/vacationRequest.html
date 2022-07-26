@@ -1,35 +1,46 @@
 <template>
     <lightning-card title="Vacation Request Creator" icon-name="utility:contact_request">
             <div class="slds-m-around_medium">
-                <div class="demo-only demo-only--sizing slds-grid slds-wrap">
-                    <div class="slds-size_1-of-3" >
-                        <lightning-input class="slds-align_absolute-center" type="checkbox" label="View only my" onchange={handleChange}></lightning-input>
-                    </div>
-                    <div class="slds-size_2-of-3">
-                        <button class="slds-button slds-button_brand slds-align_absolute-center slds-text-heading_medium" onclick={openRequestWindow}>New Request</button>
+                <div class="slds-card">
+                    <div class="slds-p-around_medium demo-only demo-only--sizing slds-grid slds-wrap">
+                        <div class="slds-size_1-of-3" >
+                            <lightning-input class="slds-align_absolute-center" type="checkbox" label="View only my" onchange={handleChange}></lightning-input>
+                        </div>
+                        <div class="slds-size_2-of-3">
+                            <button class="slds-button slds-button_brand slds-align_absolute-center slds-text-heading_medium" onclick={openRequestWindow}>New Request</button>
+                        </div>
                     </div>
                 </div>
-
-                <template if:true={requests.data}>
-                    <template for:each={requests.data} for:item="request">
-                        <div key={request.Id} class="slds-card">
-                            <div class="slds-p-around_medium slds-box">
-                                <p>{request.name}, {request.startDate} - {request.endDate} ({request.workingDays}) - {request.managerName}</p>
-                                <div class="slds-grid slds-gutters">
-                                    <div class="slds-col" if:true={request.isUser}>
-                                        <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
-                                    </div>
-                                    <div class="slds-col" if:true={request.isUser}>
-                                        <lightning-button label="Submit" if:true={request.isNew} value={request.id} onclick={submitRequest}></lightning-button>
-                                    </div>
-                                    <div class="slds-col" if:true={request.isManager}>
-                                        <lightning-button label="Approve" if:true={request.isSubmitted} value={request.id} onclick={approveRequest}></lightning-button>
+                <div class="slds-card">
+                    <div class="slds-p-around_medium">
+                        <template if:true={requests.data}>
+                            <template for:each={requests.data} for:item="request">
+                                <div key={request.Id} class="slds-card">
+                                    <div class="slds-p-around_medium slds-box">
+                                        <div class="slds-grid slds-gutters">
+                                            <div class="slds-col">
+                                                <p>{request.name}, {request.startDate} - {request.endDate} ({request.workingDays}) - {request.managerName}</p>
+                                            </div>
+                                            <div class="slds-col">
+                                                <div class="slds-grid slds-gutters">
+                                                    <div class="slds-col" if:true={request.isUser}>
+                                                        <lightning-button label="Remove" if:true={request.isNew} value={request.id} onclick={removeRequest}></lightning-button>
+                                                    </div>
+                                                    <div class="slds-col" if:true={request.isUser}>
+                                                        <lightning-button label="Submit" if:true={request.isNew} value={request.id} onclick={submitRequest}></lightning-button>
+                                                    </div>
+                                                    <div class="slds-col" if:true={request.isManager}>
+                                                        <lightning-button label="Approve" if:true={request.isSubmitted} value={request.id} onclick={approveRequest}></lightning-button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </template>
-                </template>
+                            </template>
+                        </template>
+                    </div>
+                </div>
             </div>
 
     </lightning-card>
