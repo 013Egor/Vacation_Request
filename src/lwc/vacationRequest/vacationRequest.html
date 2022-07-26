@@ -6,8 +6,8 @@
                         <lightning-input class="slds-align_absolute-center" type="checkbox" label="View only my" onchange={handleChange}></lightning-input>
                     </div>
                     <div class="slds-size_2-of-3">
-                        <p class="slds-m-bottom_small slds-align_absolute-center slds-theme_inverse">
-                            <lightning-button label="New Request" onclick={openRequestWindow}></lightning-button>
+                        <p class="slds-m-bottom_small slds-align_absolute-center">
+                            <lightning-button class="slds-theme_inverse slds-text-heading_medium" label="New Request" onclick={openRequestWindow}></lightning-button>
                         </p>
                     </div>
                 </div>
@@ -15,7 +15,7 @@
                 <template if:true={requests.data}>
                     <template for:each={requests.data} for:item="request">
                         <div key={request.Id} class="slds-card">
-                            <div class="slds-p-around_medium">
+                            <div class="slds-p-around_medium slds-box">
                                 <p>{request.name}, {request.startDate} - {request.endDate} ({request.workingDays}) - {request.managerName}</p>
                                 <div class="slds-grid slds-gutters">
                                     <div class="slds-col" if:true={request.isUser}>
