@@ -40,14 +40,14 @@ public with sharing class RequestsController {
 
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
-			User tempUser = [SELECT Id, Name from User WHERE Id =: v.CreatedById];
-			if (tempUser != null) {
-				temp.name = tempUser.Name;
+			User[] tempUser = [SELECT Id, Name from User WHERE Id =: v.CreatedById];
+			if (tempUser.size() > 0) {
+				temp.name = tempUser[0].Name;
 				tempUser = null;
 			}
 			tempUser = [SELECT Id, Name from User WHERE Id =: v.Manager__c];
-			if (tempUser != null) {
-				temp.managerName = null;
+			if (tempUser.size() > 0) {
+				temp.managerName = tempUser[0].Name;
 			}
 			temp.id = v.Id;
 			temp.startDate = v.StartDate__c;

@@ -4,13 +4,17 @@ public class RequestControllerTest {
 	@IsTest
 	static void validateGetRequests() {
 
-		User user = [SELECT Id, Name FROM User LIMIT 1][0];
-
 		User manager;
-		for (User temp : [SELECT Id, Name FROM User]) {
-			if (temp.Id != user.Id) {
-				manager = temp;
-				break;
+		User user;
+		User[] all = [SELECT Id, Name FROM User];
+
+		for (User userTemp : all) {
+			for (User managerTemp : all) {
+				if (userTemp.ManagerId == managerTemp.Id) {
+					user = userTemp;
+					manager = managerTemp;
+					break;
+				}
 			}
 		}
 
@@ -20,7 +24,6 @@ public class RequestControllerTest {
 		r.StartDate__c  = Date.newInstance(2022, 8, 2);
 		r.RequestType__c = 'Sick';
 		r.Manager__c = manager.Id;
-		r.Manager__r = manager;
 
 		insert r;
 
@@ -30,9 +33,7 @@ public class RequestControllerTest {
 				Vacation_Request__c request = new Vacation_Request__c(
 						Status__c = 'New', EndDate__c = Date.newInstance(2022, 8, 23),
 						StartDate__c  = Date.newInstance(2022, 8, 2),
-						RequestType__c = 'Sick',
-						Manager__c = manager.Id,
-						Manager__r = manager
+						RequestType__c = 'Sick'
 				);
 
 				insert request;
