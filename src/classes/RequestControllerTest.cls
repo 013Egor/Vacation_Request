@@ -6,7 +6,7 @@ public class RequestControllerTest {
 
 		User manager;
 		User user;
-		User[] all = [SELECT Id, Name FROM User];
+		User[] all = [SELECT Id, Name, ManagerId FROM User];
 
 		for (User userTemp : all) {
 			for (User managerTemp : all) {
