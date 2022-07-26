@@ -18,14 +18,15 @@ public class RequestControllerTest {
 			}
 		}
 
-		Vacation_Request__c r = new Vacation_Request__c();
-		r.Status__c = 'New';
-		r.EndDate__c = Date.newInstance(2022, 8, 23);
-		r.StartDate__c  = Date.newInstance(2022, 8, 2);
-		r.RequestType__c = 'Sick';
-		r.Manager__c = manager.Id;
+		System.runAs(manager) {
+			Vacation_Request__c r = new Vacation_Request__c();
+			r.Status__c = 'New';
+			r.EndDate__c = Date.newInstance(2022, 8, 23);
+			r.StartDate__c  = Date.newInstance(2022, 8, 2);
+			r.RequestType__c = 'Sick';
 
-		insert r;
+			insert r;
+		}
 
 		System.runAs(user) {
 
