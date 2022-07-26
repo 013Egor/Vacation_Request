@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07375371-1142-4df0-b752-776f67507d74" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationRequest/vacationRequest.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,14 +126,7 @@
       <workItem from="1658672701951" duration="17290000" />
       <workItem from="1658727817832" duration="22415000" />
       <workItem from="1658767081041" duration="585000" />
-      <workItem from="1658813294157" duration="9527000" />
-    </task>
-    <task id="LOCAL-00266" summary="fixed view my requests">
-      <created>1658741849542</created>
-      <option name="number" value="00266" />
-      <option name="presentableId" value="LOCAL-00266" />
-      <option name="project" value="LOCAL" />
-      <updated>1658741849542</updated>
+      <workItem from="1658813294157" duration="10250000" />
     </task>
     <task id="LOCAL-00267" summary="fixed view my requests">
       <created>1658742275318</created>
@@ -470,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658822607026</updated>
     </task>
-    <option name="localTasksCounter" value="315" />
+    <task id="LOCAL-00315" summary="fix html page">
+      <created>1658822855493</created>
+      <option name="number" value="00315" />
+      <option name="presentableId" value="LOCAL-00315" />
+      <option name="project" value="LOCAL" />
+      <updated>1658822855493</updated>
+    </task>
+    <option name="localTasksCounter" value="316" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
