@@ -14,7 +14,7 @@ public with sharing class RequestsController {
 		@AuraEnabled
 		public String managerName {get; set;}
 		@AuraEnabled
-		public String userId {get; set;}
+		public Id userId {get; set;}
 		@AuraEnabled
 		public Boolean isManager {get; set;}
 		@AuraEnabled
@@ -40,13 +40,20 @@ public with sharing class RequestsController {
 
 		for (Vacation_Request__c v : l) {
 			RequestWrapper temp = new RequestWrapper();
-			temp.name = [SELECT Id, Name from User WHERE Id =: v.CreatedById].Name;
-			temp.managerName = [SELECT Id, Name from User WHERE Id =: v.Manager__c].Name;
+			User tempUser = [SELECT Id, Name from User WHERE Id =: v.CreatedById];
+			if (tempUser != null) {
+				temp.name = tempUser.Name;
+				tempUser = null;
+			}
+			tempUser = [SELECT Id, Name from User WHERE Id =: v.Manager__c];
+			if (tempUser != null) {
+				temp.managerName = null;
+			}
 			temp.id = v.Id;
 			temp.startDate = v.StartDate__c;
 			temp.endDate = v.EndDate__c;
 			temp.workingDays = v.WorkingDays__c;
-			temp.userId = v.Id;
+			temp.userId = v.CreatedById;
 			temp.isManager = v.Manager__c == UserInfo.getUserId();
 			temp.isUser = v.CreatedById == UserInfo.getUserId();
 			temp.isNew = v.Status__c == 'New';

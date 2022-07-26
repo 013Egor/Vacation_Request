@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ApexVcsIndex">
     <index-record>
-      <option name="path" value="/src/triggers/request.trigger-meta.xml" />
-      <option name="type" value="DELETED" />
+      <option name="path" value="/src/classes/RequestControllerTest.cls" />
+      <option name="type" value="NEW" />
     </index-record>
     <index-record>
-      <option name="path" value="/src/classes/Controller.cls-meta.xml" />
+      <option name="path" value="/src/classes/ManagerControllerTest.cls" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/lwc/helloWorld/helloWorld.js-meta.xml" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
@@ -14,7 +18,7 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
-      <option name="path" value="/src/triggers/request.trigger" />
+      <option name="path" value="/src/classes/Controller.cls-meta.xml" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
@@ -22,12 +26,24 @@
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
+      <option name="path" value="/src/classes/ManagerControllerTest.cls-meta.xml" />
+      <option name="type" value="NEW" />
+    </index-record>
+    <index-record>
       <option name="path" value="/src/classes/Controller.cls" />
       <option name="type" value="DELETED" />
     </index-record>
     <index-record>
-      <option name="path" value="/src/lwc/helloWorld/helloWorld.js-meta.xml" />
+      <option name="path" value="/src/triggers/request.trigger-meta.xml" />
       <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/triggers/request.trigger" />
+      <option name="type" value="DELETED" />
+    </index-record>
+    <index-record>
+      <option name="path" value="/src/classes/RequestControllerTest.cls-meta.xml" />
+      <option name="type" value="NEW" />
     </index-record>
   </component>
 </project>
